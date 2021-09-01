@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;;
+}
+.navbar{
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  
+}
+
+.navbar-brand{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu-active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+
+}
+
+.navbar a:hover{
+  color:#f57914 !important ;
+}
+.collapse {
+  margin-left: 47%;
+  font-size: 21px;
+}
+
+
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: wheat;
+}
+.titleHeader {
+  text-align: end;
+}
+.hhh{
+  margin-left:auto !important;
+  margin-right: auto !important;
+  margin-top: 1%;
+}
+#header .brand-name{
+  color: #f37d10;
+}
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #f8f5f4;
+  border: 2px solid #f57e2f;
+  text-decoration: none;
+}
+
+
+#header .btn-get-started:hover{
+  background: #f87d2b;
+  color: #fff;
+}
+
+.header-img{
+  text-align: right;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+
+
+@media (max-width: 1028px){
+  .collapse {
+    margin: 0;
+  }
+  .titleHeader{
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+@-webkit-keyframes up-down{
+  0%{
+transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+
+  }
+}
+
+@keyframes up-down{
+  0%{
+transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+
+  }
+}
+
+
+
+/* Footer */
+.main-footer{
+  display: flex;
+}
+.main-footer .footer-copyright{
+  flex: 1;
+}
+.main-footer .developer{
+  flex: 1;
+}
+
+.footer-container{
+  height: 125px;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:#282846;
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.footer-container .logo{
+  flex:1;
+  font-size: 30px;
+
+}
+.footer-container .logo a{
+  padding-right: 45px;
+}
+
+.footer-container .copy{
+  flex:1;
+  cursor: pointer;
+  padding-top:20px;
+}
+
+.footer-container .developer{
+  flex:1;
+}
+.class1{
+  font-size: 30px;
+  color: white;
+  padding-left: 5px;
+}
+.menuitem {
+position: relative;
+    display: inline-block;
+}
+.menuitem span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: #f57914;
+  transition: all 0.6s;
+}
+.menuitem:hover span {
+  width: 100%;
+}
