@@ -10,13 +10,17 @@
   background-color: rgba(255, 255, 255, 0.7) !important;
   
 }
-
+.active{
+      color: #212121;
+      background: rgba(0,0,0,1);
+      
+}
 .navbar-brand{
   font-size: 1.3rem;
   text-transform: capitalize;
 }
 .menu-active{
-  font-weight: bold;
+  font-weight: bold; 
   border-bottom: 1px solid #565387;
 
 }
@@ -29,7 +33,12 @@
   font-size: 21px;
 }
 
-
+.search {
+  margin-right: 110px;
+}
+.nav-final{
+  margin-left: 10%;
+}
 
 #header{
   width: 100%;
@@ -45,6 +54,11 @@
 }
 .titleHeader {
   text-align: end;
+}
+
+#title{
+  width:100%;
+  text-align: center;
 }
 .hhh{
   margin-left:auto !important;
@@ -85,11 +99,19 @@
 
 @media (max-width: 1028px){
   .collapse {
-    margin: 0;
+    margin-left: 0;
+  }
+  .nav-final {
+    margin-left: 0;
+    margin-top: 5px;
   }
   .titleHeader{
     margin-left: 0;
     text-align: center;
+  }
+  .search {
+    margin: 0;
+    padding: 0;
   }
 }
 

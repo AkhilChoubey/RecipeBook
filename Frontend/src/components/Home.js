@@ -7,7 +7,7 @@ import img from './FOODIE.png';
 
 const Home = () => {
    
-    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`,backgroundSize:"auto" }} >
+    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`,backgroundSize:"auto", backgroundAttachment: "fixed" }} >
     <NavBar />
     
     {/* <h1> {props.location.state.details.first_name}</h1> */}

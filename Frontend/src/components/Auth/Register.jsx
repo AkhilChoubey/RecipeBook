@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route , Link, Redirect} from 'react-ro
 import { withRouter } from 'react-router';
 import { createBrowserHistory as history } from 'history';
 import { useHistory } from 'react-router';
-
-
+import swal from 'sweetalert';
+ 
 const Register = () => {
 
     const history = useHistory();
@@ -57,15 +57,17 @@ function register(e){
     axios.post('http://localhost:4100/v1/auth/register', request)
     .then(res => {
        // console.log(res.data);
-        alert("Succesfully Registered!!! " );
+        
+        swal("Succesfully Registered!!! " , "success" );
+
         history.push('/login');
     })
     .catch( (err) => {
         if(err.response.status === 422){
-            alert(err.response.data.errors); 
+            swal({title: err.response.data.errors,icon: "error"});
         }
         else {
-        alert(err.response.data.message);
+            swal({title: err.response.data.message,icon: "error"});
         }
         console.log(err.response.data.message);
     })

@@ -12,30 +12,30 @@ exports.emailExists = async (email) => {
 exports.checkEmail=()=>{
   return [
     body('email').trim()
-      .notEmpty().withMessage('Email is required.')
-      .isEmail().withMessage('Email is not valid.')
+      .notEmpty().withMessage('Email is required')
+      .isEmail().withMessage('Email is not valid')
   ];
 }
 
 exports.loginForm = () => {
   return [
     body('email').trim()
-      .notEmpty().withMessage('Email is required.')
-      .isEmail().withMessage('Email is not valid.'),
+      .notEmpty().withMessage('Email is required')
+      .isEmail().withMessage('Email is not valid'),
     body('password').trim()
-      .notEmpty().withMessage('Password is required.')
+      .notEmpty().withMessage('Password is required')
   ];
 }
 
 exports.createAccountForm=()=>{
   return [
-    body("email").trim().notEmpty().withMessage("Email is required.").isEmail().withMessage("Email is not valid."),
-    body("password").trim().notEmpty().withMessage("Password is required."),
-    body("dial_code").trim().notEmpty().withMessage("Dial code is required."),
-    body("phone").trim().notEmpty().withMessage("Phone number is required.").isLength({min:10 , max:10}).withMessage("Phone number must be of 10 digits."),
-    body("gender").trim().notEmpty().withMessage("Gender is required."),
-    body("first_name").trim().notEmpty().withMessage("First Name is required."),
-    body("last_name").trim().notEmpty().withMessage("Last Name is required.")
+    body("email").trim().notEmpty().withMessage("Email is required").isEmail().withMessage("Email is not valid."),
+    body("password").trim().notEmpty().withMessage("Password is required"),
+    body("dial_code").trim().notEmpty().withMessage("Dial code is required"),
+    body("phone").trim().notEmpty().withMessage("Phone number is required").isLength({min:10 , max:10}).withMessage("Phone number must be of 10 digits"),
+    body("gender").trim().notEmpty().withMessage("Gender is required"),
+    body("first_name").trim().notEmpty().withMessage("First Name is required"),
+    body("last_name").trim().notEmpty().withMessage("Last Name is required")
   ];
 }
 
@@ -55,13 +55,13 @@ exports.validate = (req, res, next) => {
 
 exports.emailOtp= ()=>{
   return[
-    body("email").trim().notEmpty().withMessage("Email is required.").isEmail().withMessage("Email is not valid.")
+    body("email").trim().notEmpty().withMessage("Email is required").isEmail().withMessage("Email is not valid")
   ]
 }
 
 exports.resetPasswordCheck= ()=>{
   return[
-    body("password").trim().notEmpty().withMessage("Password is required."),
-    body("otp").trim().notEmpty().withMessage("Otp is required.").isLength({min:6 , max:6}).withMessage("The Length of OTP must be 6.")
+    body("password").trim().notEmpty().withMessage("Password is required"),
+    body("otp").trim().notEmpty().withMessage("Otp is required").isLength({min:6 , max:6}).withMessage("The Length of OTP must be 6")
   ]
 }

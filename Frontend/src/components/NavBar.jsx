@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom';
 
 
 function NavBar(){
+
+
     return <>
     <div className="container-fluid nav_bg">
         <div className="row">

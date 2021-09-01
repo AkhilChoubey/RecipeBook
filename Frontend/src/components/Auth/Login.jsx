@@ -6,10 +6,11 @@ import Home from '../Home';
 import { BrowserRouter as Router, Switch, Route , Link, Redirect} from 'react-router-dom';
 import { withRouter } from 'react-router';
 import { useHistory } from 'react-router';
+import swal from 'sweetalert';
 
 
 const Login = () => {
-    const history = useHistory();
+    const history = useHistory(); 
    
 
     return <div className="align">
@@ -52,11 +53,11 @@ function login(e){
 
     }
     axios.post('http://localhost:4100/v1/auth/login', request)
-//    axios.post('http://192.168.43.120:4100/v1/auth/login', request)
+    // axios.post('http://192.168.43.120:4100/v1/auth/login', request)
     .then(res => {
        // console.log(res.data);
         
-        alert("Welcome! " + res.data.data.users.first_name );
+        swal("Login Successful " ,"Welcome! "+ res.data.data.users.first_name + " " + res.data.data.users.last_name , "success" );
         history.push({
             pathname: '/home',
             state: {details: res.data.data.users}
@@ -65,10 +66,10 @@ function login(e){
     })
     .catch( (err) => {
         if(err.response.status === 422){
-            alert(err.response.data.errors);
+            swal({title: err.response.data.errors,icon: "error"});
         }
         else {
-        alert(err.response.data.message);
+        swal({title: err.response.data.message,icon: "error"});
         }
         console.log(err.response.data.message);
     })
