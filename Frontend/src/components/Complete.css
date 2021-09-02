@@ -101,7 +101,14 @@
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-
+.top-recipe{
+  background: rgba(255,255,255,0.7) ;
+  border-radius: 200px 200px 0 0;
+}
+.top-elements{
+  margin-top: 7rem;
+  width: 100%;
+}
 
 @media (max-width: 1028px){
   .collapse {
@@ -122,6 +129,13 @@
   #title2 {
     width:100%;
     text-align: center;
+  }
+  .top-recipe{
+    border-radius: 100px 100px 0 0;
+  }
+  .top-elements{
+    margin-top: 3rem;
+    width: 100%;
   }
 }
 

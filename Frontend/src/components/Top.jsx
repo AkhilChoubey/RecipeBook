@@ -1,6 +1,7 @@
 import React ,{useState, useEffect} from 'react';
 import Element from './Element';
-
+import blob from './blob.svg';
+import wave from './wave.svg';
 const Top = () =>{
 
 
@@ -34,13 +35,14 @@ const Top = () =>{
    // const value = await axios.get('https://api.spoonacular.com/recipes/random?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&number=6');
     
   // console.log(link); //.recipes[0].image
-    return <div style={{background: "white"}}>
-        <div style={{margin: "0"}}>
-            <h1 className="text-center">Top Recipes</h1>
+    return <div className="top-recipe" >
+        <div style={{margin: "0",backgroundImage: {blob}}}>
+            <h1 className="text-center" style={{marginTop: "6rem", paddingTop: "26px"}}>Top Recipes</h1>
+           
         </div>    
         <div className="container-fluid mb-5">
-            <div className="row">
-                <div className="col-10 mx-auto">
+            <div className="row" >
+                <div className="col-10 top-elements" >
                     <div className="row gy-4">
 
                         
@@ -57,7 +59,7 @@ const Top = () =>{
                         <Element key={664273} imgsrc={"https://spoonacular.com/recipeImages/664273-556x370.jpg"} title={"Valentine's Day Potted Plant Ice-Cream Desserts"} recipe={"https://www.foodista.com/recipe/2GZ5DQ3F/valentine-s-day-potted-plant-ice-cream-desserts"} time={50} />
                         <Element key={652332} imgsrc={"https://spoonacular.com/recipeImages/652332-556x370.jpg"} title={"Monastery soup"} recipe={"https://www.foodista.com/recipe/Y67R5WMP/monastery-soup"} time={45} />
 
-                  
+                        <img src={wave} style={{padding: "0", width: "100%"}}/>
                         {/* <Card /> */}
                     </div>
                 </div>
