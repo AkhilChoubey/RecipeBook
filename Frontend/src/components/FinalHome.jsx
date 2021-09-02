@@ -5,7 +5,7 @@ import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import Random from './Random';
 import ReactTextTransition, { presets } from "react-text-transition";
-
+import Typewriter from 'typewriter-effect';
 
 
 const FinalHome = (props) => {
@@ -35,10 +35,13 @@ const FinalHome = (props) => {
               inline />
               </strong>
                </h1>
-                <h2 className="my-3" style={{color:"white"}}>Please Login or Sign Up to access the complete Website.</h2>
+               <h2 className="my-3" style={{color:"white"}}>
+               <Typewriter options={{  strings: ['Search for your favourite food', "Let's surprise others with our cooking talent"],  autoStart: true,  loop: true,changeDelay:2 }}/>
+               </h2>
+                
                 <div className="mt-3">
-                    <Link to='/login' className="btn-get-started ">Login</Link>
-                    <Link to='/signup' className="btn-get-started " style={{marginLeft: "5%"}}>Sign Up</Link>
+                    <Link to='/login' className="btn-get-started ">Random</Link>
+                    <Link to='/signup' className="btn-get-started " style={{marginLeft: "5%"}}>Healthy</Link>
                 </div>
                 </div>
     </section>
