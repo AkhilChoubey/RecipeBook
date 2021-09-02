@@ -60,6 +60,12 @@
   width:100%;
   text-align: center;
 }
+
+#title2{
+  width:47%;
+  text-align: end;
+}
+
 .hhh{
   margin-left:auto !important;
   margin-right: auto !important;
@@ -112,6 +118,10 @@
   .search {
     margin: 0;
     padding: 0;
+  }
+  #title2 {
+    width:100%;
+    text-align: center;
   }
 }
 

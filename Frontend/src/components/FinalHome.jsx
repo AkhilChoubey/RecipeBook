@@ -3,11 +3,12 @@ import FinalNav from './FinalNav';
 import bg from './foodNew.jpg';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-import Random from './Random';
+import Top from './Top';
 import ReactTextTransition, { presets } from "react-text-transition";
 import Typewriter from 'typewriter-effect';
+import Healthy from './Healthy';
 
-
+ 
 const FinalHome = (props) => {
 
 
@@ -40,12 +41,13 @@ const FinalHome = (props) => {
                </h2>
                 
                 <div className="mt-3">
-                    <Link to='/login' className="btn-get-started ">Random</Link>
-                    <Link to='/signup' className="btn-get-started " style={{marginLeft: "5%"}}>Healthy</Link>
+                    <Link to='/top' className="btn-get-started ">Top</Link>
+                    <Link to='/healthy' className="btn-get-started " style={{marginLeft: "5%"}}>Healthy</Link>
                 </div>
                 </div>
     </section>
-    <Random />
+    <Top />
+    <Healthy />
     <Footer />
     </div>
     

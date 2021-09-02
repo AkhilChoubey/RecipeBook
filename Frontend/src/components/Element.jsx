@@ -10,7 +10,7 @@ const Element= (props)=>{
                     <img src={props.imgsrc} class="card-img-top" alt={props.imgsrc} />
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">{props.title}</h5>
-                            <p class="card-text">Time to ready : {props.time}</p>
+                            <p class="card-text">Time to ready : {props.time} minutes</p>
                             <a type="botton" href={props.recipe} class="btn btn-primary">Show recipe</a>
                         </div>
                 </div>
