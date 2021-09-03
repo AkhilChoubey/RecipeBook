@@ -2,8 +2,15 @@ import React ,{useState, useEffect} from 'react';
 import Element from './Element';
 import blob from './blob.svg';
 import wave from './wave.svg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Top = () =>{
 
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
 
    // const [link, setPosts] = useState(null);
     
@@ -59,7 +66,7 @@ const Top = () =>{
                         <Element key={664273} imgsrc={"https://spoonacular.com/recipeImages/664273-556x370.jpg"} title={"Valentine's Day Potted Plant Ice-Cream Desserts"} recipe={"https://www.foodista.com/recipe/2GZ5DQ3F/valentine-s-day-potted-plant-ice-cream-desserts"} time={50} />
                         <Element key={652332} imgsrc={"https://spoonacular.com/recipeImages/652332-556x370.jpg"} title={"Monastery soup"} recipe={"https://www.foodista.com/recipe/Y67R5WMP/monastery-soup"} time={45} />
 
-                        <img src={wave} style={{padding: "0", width: "100%"}}/>
+                        <img src={wave} style={{padding: "0", width: "100%"}} data-aos='fade-down'/>
                         {/* <Card /> */}
                     </div>
                 </div>

@@ -1,10 +1,14 @@
 import React ,{useState, useEffect} from 'react';
 import Element from './Element';
 import wave from './wave.svg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Healthy = () =>{
 
-
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
    // const [link, setPosts] = useState(null);
     
     //componentDidMount
@@ -37,7 +41,7 @@ const Healthy = () =>{
   // console.log(link); //.recipes[0].image
     return <div style={{background: "white"}}>
         <div style={{margin: "0"}}>
-        <img src={wave} style={{padding: "0", width: "100%", transform: "rotate(180deg)"}}/>
+        <img src={wave} style={{padding: "0", width: "100%", transform: "rotate(180deg)"}} data-aos='fade-up'/>
         <div className="seven">
             <h1 className="text-center">Healthy Recipes</h1>
             </div>    

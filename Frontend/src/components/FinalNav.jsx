@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {BsSearch} from 'react-icons/bs';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function FinalNav(props){
+
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+
+
     return <>
-    <div className="container-fluid nav_bg">
+    <div className="container-fluid nav_bg" data-aos="fade-down">
         <div className="row" >
             <div className="col-10 " style={{marginTop: "1%" , width:"100%"}}>
  
