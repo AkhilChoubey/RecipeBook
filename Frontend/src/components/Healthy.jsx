@@ -1,6 +1,6 @@
 import React ,{useState, useEffect} from 'react';
 import Element from './Element';
-
+import wave from './wave.svg';
 
 const Healthy = () =>{
 
@@ -37,12 +37,14 @@ const Healthy = () =>{
   // console.log(link); //.recipes[0].image
     return <div style={{background: "white"}}>
         <div style={{margin: "0"}}>
+        <img src={wave} style={{padding: "0", width: "100%", transform: "rotate(180deg)"}}/>
             <h1 className="text-center">Healthy Recipes</h1>
         </div>    
-        <div className="container-fluid mb-5">
+        <div className="container-fluid">
             <div className="row">
                 <div className="col-10 mx-auto">
                     <div className="row gy-4">
+                    
 
                         
                         {/* <Element key={link[0].index} imgsrc={link[0].image} title={link[0].title} recipe={link[0].sourceUrl} time={link[0].readyInMinutes} />

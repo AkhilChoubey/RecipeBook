@@ -40,9 +40,9 @@ const Top = () =>{
             <h1 className="text-center" style={{marginTop: "6rem", paddingTop: "26px"}}>Top Recipes</h1>
            
         </div>    
-        <div className="container-fluid mb-5">
+        <div className="container-fluid">
             <div className="row" >
-                <div className="col-10 top-elements" >
+                <div className="col-10 mx-auto top-elements" >
                     <div className="row gy-4">
 
                         
