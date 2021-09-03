@@ -38,11 +38,13 @@ const Healthy = () =>{
     return <div style={{background: "white"}}>
         <div style={{margin: "0"}}>
         <img src={wave} style={{padding: "0", width: "100%", transform: "rotate(180deg)"}}/>
+        <div className="seven">
             <h1 className="text-center">Healthy Recipes</h1>
+            </div>    
         </div>    
         <div className="container-fluid">
             <div className="row">
-                <div className="col-10 mx-auto">
+                <div className="col-10 top-elements">
                     <div className="row gy-4">
                     
 

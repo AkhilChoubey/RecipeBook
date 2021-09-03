@@ -102,8 +102,7 @@
 }
 
 .top-recipe{
-  background: rgba(255,255,255,0.7) ;
-  border-radius: 200px 200px 0 0;
+  background: rgba(255,255,255,1) ;
 }
 .top-elements{
   margin-top: 7rem;
@@ -130,9 +129,7 @@
     width:100%;
     text-align: center;
   }
-  .top-recipe{
-    border-radius: 100px 100px 0 0;
-  }
+
   .top-elements{
     margin-top: 3rem;
     width: 100%;
@@ -224,3 +221,52 @@ position: relative;
 .menuitem:hover span {
   width: 100%;
 }
+
+/* Component heading */
+.eleven h1 {
+  font-size:30px;text-align:center; line-height:1.5em; padding-bottom:45px; font-family:"Playfair Display", serif; text-transform:uppercase;letter-spacing: 2px; color:#111;
+}
+
+
+.eleven h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 60%;
+  left:50%; margin-left:-30%;
+  height: 1px;
+  content: "";
+  background-color: #777; z-index: 4;
+}
+.eleven h1:after {
+  position:absolute;
+  width:40px; height:40px; left:50%; margin-left:-20px; bottom:0px;
+  content: '\00a7'; font-size:30px; line-height:40px; color:#c50000;
+  font-weight:400; z-index: 5;
+  display:block;
+  background-color:#f8f8f8;
+}
+
+
+.seven h1 {
+  text-align: center;
+      font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .seven h1:after,.seven h1:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #c50000;
+      border-top: 1px solid #c50000;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  
+
