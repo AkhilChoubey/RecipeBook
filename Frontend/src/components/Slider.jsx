@@ -8,7 +8,7 @@ import { Paper, Button } from "@material-ui/core";
  const Slider = () => {
  
 
-    return  <Carousel navButtonsAlwaysVisible="true" >
+    return  <Carousel navButtonsAlwaysVisible="true" animation="slide" interval="5000" >
       {/* {
         items.map((items, i) => {
           <Item key={i} item={items} />
