@@ -1,10 +1,38 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {BsSearch} from 'react-icons/bs';
+import Search from './Search';
+import { useHistory } from 'react-router';
 
 
 function FinalNav(props){
 
+    const history = useHistory(); 
+
+    const [find, setFind] = useState(null);
+    const [rest, setRes] = useState(null);
+
+    function handleChange(e){
+        let val = e.target.value;
+        setRes(val);
+    }
+
+    function handleFind(e){
+        //<Search key="1" imgsrc={} title={} recipe={} time={} />
+        let result = rest;
+        fetch(`https://api.spoonacular.com/recipes/complexSearch?number=6&apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&maxFat=25&maxCalories=2000&query=${result}`)
+        .then(response => response.json())
+        .then((data)=>{
+           // console.log(data)
+            history.push({
+                pathname: '/search',
+                state: {details: data}
+        });
+        })
+        .catch((e)=> console.log(e))  
+    }
+
+  
 
     return <>
     <div className="container-fluid nav_bg" >
@@ -20,8 +48,8 @@ function FinalNav(props){
     </button>
            <div className="collapse navbar-collapse nav-final" id="navbarSupportedContent" >
            <form className="d-flex search">
-        <input className="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" style={{width: "17rem", borderRadius: "25px"}}/>
-        <a type="submit" style={{paddingLeft: "4px" ,fontSize: "23px"}}><BsSearch /></a>
+        <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" style={{width: "17rem", borderRadius: "25px"}} />
+        <a type="submit" onClick={handleFind} style={{paddingLeft: "4px" ,fontSize: "23px"}}><BsSearch /></a>
         {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
            <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>

@@ -10,6 +10,7 @@ import FinalHome from './FinalHome';
 import Top from './Top';
 import { withRouter } from 'react-router';
 import Healthy from './Healthy';
+import Search from './Search';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
          <Route path="/login" component={withRouter(Login)}/>
          <Route path="/top" component={withRouter(Top)}/>
          <Route path="/healthy" component={withRouter(Healthy)}/>
+         <Route path="/search" component={withRouter(Search)}/>
         </Switch>
     </Router>     
     </div>
