@@ -8,7 +8,7 @@ import {AiOutlineTwitter} from "react-icons/ai";
 const Footer=()=>{
     return (
         <>
-          <footer className="footer-container">
+          <footer className="footer-container" style={{marginTop: "0"}}>
          
               <div className="copy">
                   <p>&copy; AkhilChoubey</p>

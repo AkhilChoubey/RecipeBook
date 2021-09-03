@@ -17,9 +17,9 @@ const SElement= (props)=>{
                     <img src={props.imgsrc} class="card-img-top" alt={props.imgsrc} />
                             <h5 class="card-title font-weight-bold">{props.title}</h5>
                             <p class="card-text">Time to ready : {props.time} minutes</p>
-                            <p class="card-text">Calories : {props.time} </p>
-                            <p class="card-text">Fat : {props.time} g</p>
-\                        </div>
+                            <p class="card-text">Calories : {props.calories} kcal</p>
+                            <p class="card-text">Fat : {props.fat} g</p>
+                       </div>
                 </div>
             </div>
                    

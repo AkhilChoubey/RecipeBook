@@ -59,15 +59,15 @@ const Healthy = () =>{
                         <Element key={link[3].index} imgsrc={link[3].image} title={link[7].title} recipe={link[3].sourceUrl} time={link[3].readyInMinutes} />
                         <Element key={link[4].index} imgsrc={link[4].image} title={link[8].title} recipe={link[4].sourceUrl} time={link[4].readyInMinutes} /> */}
 
-                        <Element key={665170} imgsrc={ "https://spoonacular.com/recipeImages/665170-556x370.jpg"} title={"White Chocolate Cherry Hand Pies"} recipe={ "https://www.foodista.com/recipe/T22BGDFV/white-chocolate-cherry-hand-pies"} time={45} />
-                        <Element key={634854} imgsrc={"https://spoonacular.com/recipeImages/634854-556x370.jpg"} title={ "Berry Fruit Crumble"} recipe={ "https://www.foodista.com/recipe/67KX7C62/berry-fruit-crumble"} time={45} />
-                        <Element key={659180} imgsrc= {"https://spoonacular.com/recipeImages/635552-556x370.jpg"} title={"Blueberry Vanilla Pie"} recipe={ "http://www.foodista.com/recipe/QQC5Y6J8/blueberry-vanilla-pie"} time={55} />
-                        <Element key={652750} imgsrc={"https://spoonacular.com/recipeImages/652750-556x370.jpg"} title={"Mussels & Clams in White Wine {Cozze e Vongole}"} recipe={"http://www.foodista.com/recipe/TXM3X2KZ/mussels-clams-in-white-wine-cozze-e-vongole"} time={60} />
-                        <Element key={664273} imgsrc={"https://spoonacular.com/recipeImages/664273-556x370.jpg"} title={"Valentine's Day Potted Plant Ice-Cream Desserts"} recipe={"https://www.foodista.com/recipe/2GZ5DQ3F/valentine-s-day-potted-plant-ice-cream-desserts"} time={50} />
-                        <Element key={652332} imgsrc={"https://spoonacular.com/recipeImages/652332-556x370.jpg"} title={"Monastery soup"} recipe={"https://www.foodista.com/recipe/Y67R5WMP/monastery-soup"} time={45} />
-
+                        {/* <Element key={659674} imgsrc={ "https://spoonacular.com/recipeImages/659674-556x370.jpg"} title={"Seared Pork Chops W/ Mango Salsa"} recipe={ "http://www.foodista.com/recipe/D7NJGN5C/seared-pork-chops-w-mango-salsa"} time={45} /> */}
+                        <Element key={638797} imgsrc={"https://spoonacular.com/recipeImages/638797-556x370.jpg"} title={"Chocoholic's Deep Dark Dream Chiffon Cake"} recipe={"http://www.foodista.com/recipe/PVY6548N/chocoholics-deep-dark-dream-chiffon-cake"} time= {45} />
+                        <Element key={647395} imgsrc={"https://spoonacular.com/recipeImages/647395-556x370.jpg"} title={"Hot Artichoke Crab Dip"} recipe={ "https://www.foodista.com/recipe/QKLVNNXS/crab-artichoke-dip-hot"} time={45} />
+                        <Element key={644860} imgsrc= {"https://spoonacular.com/recipeImages/644860-556x370.jpg"} title={"Gluten Free Waffles"} recipe={"https://www.foodista.com/recipe/576TZWT3/gluten-free-waffles"} time={55} />
+                        <Element key={653977} imgsrc={"https://spoonacular.com/recipeImages/633921-556x370.jpg"} title={"Orange Zest Maple Date Bars"} recipe={"http://www.foodista.com/recipe/CK5NCLGT/balsamic-honey-glazed-salmon-with-lemony-asparagus"} time={60} />
+                        <Element key={636212} imgsrc={"https://spoonacular.com/recipeImages/636212-556x370.jpg"} title={"Broccoli Rabe with Tomatoes, Anchovies & Spaghetti"} recipe={"http://www.foodista.com/recipe/NN7GPTYR/broccoli-rabe-with-tomatoes-anchovies-spaghetti"} time={45} />
+                        <Element key={769754} imgsrc={"https://spoonacular.com/recipeImages/769754-556x370.jpg"} title={"Beef Carrot Stew"} recipe={"http://www.afrolems.com/2016/05/26/beef-carrot-stew/"} time={45} />
                   
-                        {/* <Card /> */}
+                        
                     </div>
                 </div>
             </div>

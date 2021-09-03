@@ -67,7 +67,7 @@ const Top = () =>{
                         <Element key={652332} imgsrc={"https://spoonacular.com/recipeImages/652332-556x370.jpg"} title={"Monastery soup"} recipe={"https://www.foodista.com/recipe/Y67R5WMP/monastery-soup"} time={45} />
 
                         <img src={wave} style={{padding: "0", width: "100%"}} data-aos='fade-down'/>
-                        {/* <Card /> */}
+                        
                     </div>
                 </div>
             </div>
