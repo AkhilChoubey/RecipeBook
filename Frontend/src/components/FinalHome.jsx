@@ -7,6 +7,7 @@ import Top from './Top';
 import ReactTextTransition, { presets } from "react-text-transition";
 import Typewriter from 'typewriter-effect';
 import Healthy from './Healthy';
+import Slider from './Slider';
 
  
 const FinalHome = (props) => {
@@ -48,7 +49,10 @@ const FinalHome = (props) => {
     </section>
     <Top />
     <Healthy />
+    
+    <Slider />
     <Footer />
+    
     </div>
     
 } 

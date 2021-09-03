@@ -2,6 +2,7 @@ import React from 'react';
 import Login from './Auth/Login';
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BrowserRouter as Router, Switch, Route , Link} from 'react-router-dom';
 import Register from './Auth/Register';
 import Home from './Home';
