@@ -36,7 +36,7 @@ const Top = () =>{
     
   // console.log(link); //.recipes[0].image
     return <div className="top-recipe" >
-        <div  className="eleven" >
+        <div  className="seven" >
             <h1 className="text-center" style={{marginTop: "6rem", paddingTop: "26px"}}>Top Recipes</h1>
            
         </div>    
