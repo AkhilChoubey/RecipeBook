@@ -4,7 +4,7 @@ import blob from './blob.svg';
 import wave from './wave.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import Wave from 'react-wavify';
 
 const Search = (props) => {
     React.useEffect(() => {
@@ -36,11 +36,21 @@ const Search = (props) => {
                         <Element key={664273} imgsrc={"https://spoonacular.com/recipeImages/664273-556x370.jpg"} title={"Valentine's Day Potted Plant Ice-Cream Desserts"} recipe={"https://www.foodista.com/recipe/2GZ5DQ3F/valentine-s-day-potted-plant-ice-cream-desserts"} time={50} />
                         <Element key={652332} imgsrc={"https://spoonacular.com/recipeImages/652332-556x370.jpg"} title={"Monastery soup"} recipe={"https://www.foodista.com/recipe/Y67R5WMP/monastery-soup"} time={45} /> */}
 
-                        <img src={wave} style={{padding: "0", width: "100%"}} data-aos='fade-down'/>
+                        {/* <img src={wave} style={{padding: "0", width: "100%"}} data-aos='fade-down'/> */}
                         
                     </div>
                 </div>
             </div>
+            <div >
+    <Wave fill='#4fcef5'
+    paused={false}
+    options={{
+        height: 20,
+        amplitude: 30,
+        speed: 0.2,
+        points: 4
+    }} />
+    </div>
         </div>
     </div>
 }
