@@ -52,7 +52,7 @@ function login(e){
         password: document.getElementById("password").value
 
     }
-    // axios.post('http://localhost:4100/v1/auth/login', request)
+    axios.post('http://localhost:4100/v1/auth/login', request)
     axios.post('http://192.168.43.120:4100/v1/auth/login', request)
     .then(res => {
        // console.log(res.data);

@@ -55,10 +55,12 @@ function register(e){
         password: document.getElementById("password").value
     }
     axios.post('http://localhost:4100/v1/auth/register', request)
+    axios.post('http://192.168.43.120:4100/v1/auth/register', request)
+
     .then(res => {
        // console.log(res.data);
         
-        swal("Succesfully Registered!!! " , "success" );
+        swal({title: "Succesfully Registered!!! " ,icon: "success" });
 
         history.push('/login');
     })
