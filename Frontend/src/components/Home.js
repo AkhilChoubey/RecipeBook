@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import img from './FOODIE.png';
 import Typewriter from 'typewriter-effect';
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -40,6 +41,7 @@ const Home = () => {
         </div>
         </div>
         </section>
+        <Contact />
         <Footer />
     </div>
 }

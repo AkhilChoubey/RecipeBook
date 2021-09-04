@@ -26,7 +26,7 @@ const App = () => {
          <Route path="/top" component={withRouter(Top)}/>
          <Route path="/healthy" component={withRouter(Healthy)}/>
          <Route path="/search" component={withRouter(Search)}/>
-         <Route path="/about" component={withRouter(About)}/>
+         {/* <Route path="/about" component={withRouter(About)}/> */}
          <Route path="/contact" component={withRouter(Contact)}/>
         </Switch>
     </Router>     
