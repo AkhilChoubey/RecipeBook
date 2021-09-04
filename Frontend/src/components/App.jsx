@@ -11,6 +11,8 @@ import Top from './Top';
 import { withRouter } from 'react-router';
 import Healthy from './Healthy';
 import Search from './Search';
+import About from './About';
+import Contact from './Contact';
 
 const App = () => {
 
@@ -24,6 +26,8 @@ const App = () => {
          <Route path="/top" component={withRouter(Top)}/>
          <Route path="/healthy" component={withRouter(Healthy)}/>
          <Route path="/search" component={withRouter(Search)}/>
+         <Route path="/about" component={withRouter(About)}/>
+         <Route path="/contact" component={withRouter(Contact)}/>
         </Switch>
     </Router>     
     </div>

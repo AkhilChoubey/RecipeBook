@@ -8,6 +8,7 @@ import ReactTextTransition, { presets } from "react-text-transition";
 import Typewriter from 'typewriter-effect';
 import Healthy from './Healthy';
 import Slider from './Slider';
+import Contact from './Contact';
 
  
 const FinalHome = (props) => {
@@ -50,6 +51,7 @@ const FinalHome = (props) => {
     <Healthy />
     
     <Slider />
+    <Contact />
     <Footer />
     
     </div>
