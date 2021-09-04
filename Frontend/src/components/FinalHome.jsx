@@ -15,17 +15,7 @@ const FinalHome = (props) => {
 
 
     let title = props.location.state.details.first_name;
-    const [index, setIndex] = React.useState(0);
 
-  React.useEffect(() => {
-    const intervalId = setInterval(() =>
-      setIndex(index => index + 1),
-      3000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
-
-    const texts = ["Recipes", "Magic", "Taste"];
 
     return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`, backgroundAttachment: "fixed",backgroundRepeat: "no-repeat"}} >
     <FinalNav title={title} />
