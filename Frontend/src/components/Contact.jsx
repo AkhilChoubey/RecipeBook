@@ -101,7 +101,7 @@ const Contact = () => {
       
 
     </div>
-    <div data-aos= "fade-up">
+    <div >
     <Wave fill='#4fcef5'
     paused={false}
     options={{

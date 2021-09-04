@@ -35,7 +35,7 @@
 }
 
 .search {
-  margin-right: 66px;
+  margin-right: 110px;
 }
 .nav-final{
   margin-left: 3%;
@@ -197,7 +197,7 @@ transform: translateY(10px);
   justify-content: center;
   align-items: center;
   text-align: center;
-  background:#282846;
+  background:#15151b;
   color: white;
   margin-top: 30px;
   font-size: 20px;
