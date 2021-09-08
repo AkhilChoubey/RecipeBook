@@ -15,7 +15,7 @@ const Search = (props) => {
     console.log(result);        
    
     return <div className="top-recipe" >
-        <div  className="seven" >
+        <div className="seven" >
             <h1 className="text-center" style={{marginTop: "6rem", paddingTop: "26px"}}>Top Search Results</h1>
            
         </div>    
