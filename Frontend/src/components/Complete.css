@@ -124,6 +124,13 @@
   color: white;
 }
 
+/* meal search styling */
+.meal-search {
+  text-align: center;
+  margin-left: 23rem;
+}
+
+
 @media (max-width: 1028px){
   .collapse {
     margin-left: 0;

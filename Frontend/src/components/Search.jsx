@@ -41,8 +41,11 @@ const Search = (props) => {
                     </div>
                 </div>
             </div>
-            <div >
-    <Wave fill='#4fcef5'
+            
+    
+        </div>
+        <div >
+        <Wave fill='#4fcef5'
     paused={false}
     options={{
         height: 20,
@@ -51,7 +54,6 @@ const Search = (props) => {
         points: 4
     }} />
     </div>
-        </div>
     </div>
 }
 

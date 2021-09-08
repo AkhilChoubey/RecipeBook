@@ -9,6 +9,7 @@ import Typewriter from 'typewriter-effect';
 import Healthy from './Healthy';
 import Slider from './Slider';
 import Contact from './Contact';
+import MealSearch from './MealSearch';
 
  
 const FinalHome = (props) => {
@@ -37,6 +38,7 @@ const FinalHome = (props) => {
                 </div>
                 </div>
     </section>
+    <MealSearch />
     <Top />
     <Healthy />
     

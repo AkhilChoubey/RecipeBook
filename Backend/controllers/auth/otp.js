@@ -12,7 +12,9 @@ exports.sendOtp = asyncHandler(async (req, res, next) => {
         let expiry_date = dayjs(current_date).add(15,'m').toDate();
 
         await Users.emailOtpEntry({email: req.body.email, otp: otp, expiry_date: expiry_date, is_verified:0});
-      
+   
+        //   Add send otp to email code here 
+        
         res.status(200).json({data:{ otp: otp }, message: "OTP sent!"});
     }
     else {
