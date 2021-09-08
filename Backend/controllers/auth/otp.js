@@ -30,7 +30,7 @@ exports.sendOtp = asyncHandler(async (req, res, next) => {
         var mailOptions = {
             from: 'akhilchoubeys@gmail.com',
             to: req.body.email,
-            subject: "OTP for registration is ",
+            subject: "OTP for RecipeBook ",
             html: "<h3>OTP to update password is </h3>" +"<h1 style='font-weight: bold;'>" + otp + "</h1>"
         };
         transporter.sendMail(mailOptions, (err, info) => {
