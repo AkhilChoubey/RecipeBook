@@ -59,14 +59,14 @@ const Contact = () => {
 
             
             <div className="md-form mt-3" data-aos='fade-down'>
-            <label for="materialContactFormName">Name</label>
+            <label htmlFor="materialContactFormName">Name</label>
                 <input type="text" id="materialContactFormName" onChange={handleName} className="form-control" />
                 
             </div>
 
             
             <div className="md-form" style={{marginTop: "2%"}} data-aos='fade-up'>
-            <label for="materialContactFormEmail">E-mail</label>
+            <label htmlFor="materialContactFormEmail">E-mail</label>
                 <input type="email" id="materialContactFormEmail" onChange={handleEmail} className="form-control" />
                 
             </div>
@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
             
             <div className="md-form" style={{marginTop: "2%"}} data-aos='fade-down'>
-            <label for="materialContactFormMessage">Message</label>
+            <label htmlFor="materialContactFormMessage">Message</label>
                 <textarea id="materialContactFormMessage" onChange={handleMessage} className="form-control md-textarea" rows="3"></textarea>
                 
             </div>
