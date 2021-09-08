@@ -73,9 +73,9 @@ const Contact = () => {
 
             <div style={{marginTop: "2%"}} data-aos='fade-up'>
             <span style={{marginRight: "2%"}}>Subject</span>
-            <select className="mdb-select">
+            <select className="mdb-select" defaultValue="1">
                 <option value="" disabled>Choose option</option>
-                <option value="1" selected>Feedback</option>
+                <option value="1" >Feedback</option>
                 <option value="2">Report a bug</option>
                 <option value="3">Feature request</option>
                 <option value="4">Feature request</option>

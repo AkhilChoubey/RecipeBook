@@ -53,12 +53,12 @@ function FinalNav(props){
         {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
            <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/top' activeclassName="menu-active" className="nav-link">Top</Link><span></span></li>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/healthy' activeclassName="menu-active" className="nav-link">Healthy</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/top' activeclassname="menu-active" className="nav-link">Top</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/healthy' activeclassname="menu-active" className="nav-link">Healthy</Link><span></span></li>
                 {/* <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/about' activeclassName="menu-active" className="nav-link">About</Link><span></span></li> */}
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/contact' activeclassName="menu-active" className="nav-link">Contact</Link><span></span></li>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/meal' activeclassName="menu-active" className="nav-link">MealMaker</Link><span></span></li>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/' activeclassName="menu-active" className="nav-link">Log out</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/contact' activeclassname="menu-active" className="nav-link">Contact</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/meal' activeclassname="menu-active" className="nav-link">MealMaker</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/' activeclassname="menu-active" className="nav-link">Log out</Link><span></span></li>
 
             </ul>
             </div>
