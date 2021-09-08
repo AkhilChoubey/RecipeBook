@@ -43,7 +43,7 @@ const Top = () =>{
     
   // console.log(link); //.recipes[0].image
     return <div className="top-recipe" >
-        <div  className="seven" data-aos='fade-down'>
+        <div  className="eleven" data-aos='fade-up'>
             <h1 className="text-center" style={{paddingTop: "120px"}}>Top Recipes</h1>
            
         </div>    
