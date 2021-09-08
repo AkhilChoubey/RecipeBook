@@ -14,6 +14,7 @@ import Search from './Search';
 import About from './About';
 import Contact from './Contact';
 import MealPlaner from './MealPlaner';
+import MealSearch from './MealSearch';
 
 const App = () => {
 
@@ -29,7 +30,7 @@ const App = () => {
          <Route path="/search" component={withRouter(Search)}/>
          {/* <Route path="/about" component={withRouter(About)}/> */}
          <Route path="/contact" component={withRouter(Contact)}/>
-         <Route path="/meal" component={withRouter(MealPlaner)}/>
+         <Route path="/meal" component={withRouter(MealSearch)}/>
         </Switch>
     </Router>     
     </div>

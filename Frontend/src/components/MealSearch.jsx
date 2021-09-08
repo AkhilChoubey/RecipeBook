@@ -60,7 +60,7 @@ const MealSearch = () => {
 
     
 
-     return <div className= 'top-recipe'>
+     return <div className= 'top-recipe' id='mealMaker'>
               <div className="seven" >
                 <h1 className="text-center" style={{marginTop: "6rem", paddingTop: "26px"}}>Daily Meal Planner</h1>
               </div> 
