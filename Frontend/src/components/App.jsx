@@ -15,6 +15,8 @@ import About from './About';
 import Contact from './Contact';
 import MealPlaner from './MealPlaner';
 import MealSearch from './MealSearch';
+import ResetPass from './Auth/ResetPass';
+
 
 const App = () => {
 
@@ -23,8 +25,12 @@ const App = () => {
         <Switch>
          <Route path="/" exact component={Home} />
          <Route path="/home" exact component={FinalHome} />
+
          <Route path="/signup" component={withRouter(Register)}/>
          <Route path="/login" component={withRouter(Login)}/>
+         <Route path="/reset" component={withRouter(ResetPass)}/>
+
+
          <Route path="/top" component={withRouter(Top)}/>
          <Route path="/healthy" component={withRouter(Healthy)}/>
          <Route path="/search" component={withRouter(Search)}/>
