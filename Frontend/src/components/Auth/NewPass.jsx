@@ -24,11 +24,11 @@ const NewPass = () => {
             </div>
              */}
              <div className="form__field">
-            <input id="otp" type="text" placeholder="Enter sent OTP" />
+            <input id="otp" type="text" placeholder="Enter sent OTP" autoComplete="false"  />
             
             </div>
             <div className="form__field">
-            <input id="password" type="password" placeholder="Enter your new password" />
+            <input id="password" type="password" placeholder="Enter your new password" autoComplete="false" />
             
             </div>
             <div className="form__field">
@@ -63,14 +63,9 @@ function login(e){
        
     })
     .catch( (err) => {
-        if(err.response.status === 422){
-            swal({title: err.response.data.errors,icon: "error"});
-        }
-        else {
-        swal({title: err.response.data.message,icon: "error"});
-        }
-       console.log(err.response.data.message);
-    })
+    //     
+    swal({title: err.response.data.message ,icon: "error" });
+})
 }
 }
 export default withRouter(NewPass);

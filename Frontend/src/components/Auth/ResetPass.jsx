@@ -53,7 +53,7 @@ function login(e){
     .then(res => {
        // console.log(res.data);
         
-        swal({title: "OTP Sent on ",icon: "success" });
+        swal({title: "OTP Sent ",icon: "success" });
         history.push({
             pathname: '/resetpassword'
             //state: {details: res.data.data.users}
@@ -62,11 +62,13 @@ function login(e){
     })
     .catch( (err) => {
 //         
-swal({title: "OTP Sent ",icon: "success" });
-        history.push({
-            pathname: '/resetpassword'
-            //state: {details: res.data.data.users}
-    });
+    // swal({title: "OTP Sent ",icon: "success" });
+    //     history.push({
+    //         pathname: '/resetpassword'
+    //         //state: {details: res.data.data.users}
+    // });
+    console.log(err.response.data.message);
+    swal(err.response.data.message,"Please enter a valid pre-registered Email ID", "error");
     })
 }
 }
