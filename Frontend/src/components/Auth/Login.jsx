@@ -25,6 +25,9 @@ const Login = () => {
             
             <div className="form__field">
             <input id="password" type="password" placeholder="Enter your password" />
+            <Link to="/reset">
+         ForgotPassword?
+        </Link>
             </div>
             <div className="form__field">
             <input type="submit" id="submit" value="Login"/>
