@@ -57,7 +57,7 @@ function FinalNav(props){
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/healthy' activeclassName="menu-active" className="nav-link">Healthy</Link><span></span></li>
                 {/* <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/about' activeclassName="menu-active" className="nav-link">About</Link><span></span></li> */}
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/contact' activeclassName="menu-active" className="nav-link">Contact</Link><span></span></li>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><a href='#mealMaker' activeclassName="menu-active" className="nav-link">MealMaker</a><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/meal' activeclassName="menu-active" className="nav-link">MealMaker</Link><span></span></li>
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/' activeclassName="menu-active" className="nav-link">Log out</Link><span></span></li>
 
             </ul>

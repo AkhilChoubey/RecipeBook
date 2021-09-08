@@ -14,10 +14,10 @@ const Footer=()=>{
                   <p>&copy; AkhilChoubey</p>
               </div>
               <div className="logo">
-              <a href="https://www.linkedin.com/in/akhil-choubey-376887192" style={{paddingLeft: "35px"}}><FaLinkedin /></a>
-                 <a href="https://github.com/AkhilChoubey"><AiFillGithub /></a>
-                 <a href="https://www.facebook.com/profile.php?id=100009258792168"><AiFillFacebook /></a>
-                 <a href="https://twitter.com/AkhilKrChoubey1?s=08"><AiOutlineTwitter /></a>
+              <a href="https://www.linkedin.com/in/akhil-choubey-376887192" style={{paddingLeft: "35px"}}><FaLinkedin style={{color: 'black'}}/></a>
+                 <a href="https://github.com/AkhilChoubey"><AiFillGithub style={{color: 'black'}}/></a>
+                 <a href="https://www.facebook.com/profile.php?id=100009258792168"><AiFillFacebook style={{color: 'black'}} /></a>
+                 <a href="https://twitter.com/AkhilKrChoubey1?s=08"><AiOutlineTwitter style={{color: 'black'}}/></a>
 
               </div>
               {/* <div className="developer">
