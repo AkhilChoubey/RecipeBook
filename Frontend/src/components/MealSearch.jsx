@@ -71,8 +71,6 @@ const MealSearch = () => {
         </form>
          { result.meals && 
          
-            // console.log(data);
-            
             <div className="container-fluid">
             <div className="row" >
                 <div className="col-10 top-elements" >
