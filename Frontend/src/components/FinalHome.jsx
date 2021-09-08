@@ -34,7 +34,7 @@ const FinalHome = (props) => {
                </h2>
                 
                 <div className="mt-3">
-                    <Link to='/top' className="btn-get-started ">Top</Link>
+                    <Link to='/meal' className="btn-get-started ">MealMaker</Link>
                     <Link to='/healthy' className="btn-get-started " style={{marginLeft: "5%"}}>Healthy</Link>
                 </div>
                 </div>
