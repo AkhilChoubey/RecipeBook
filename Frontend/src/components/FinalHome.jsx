@@ -10,6 +10,7 @@ import Healthy from './Healthy';
 import Slider from './Slider';
 import Contact from './Contact';
 import MealSearch from './MealSearch';
+import newbg from './thai-food.jpg';
 
  
 const FinalHome = (props) => {
@@ -18,7 +19,7 @@ const FinalHome = (props) => {
     let title = props.location.state.details.first_name;
 
 
-    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`, backgroundAttachment: "fixed",backgroundRepeat: "no-repeat"}} >
+    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${newbg})`, backgroundAttachment: "fixed",backgroundRepeat: "no-repeat"}} >
     <FinalNav title={title} />
     {/* <h1> {props.location.state.details.first_name}</h1> */}
     <section id="header" className="d-flex align-items-center">
