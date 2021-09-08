@@ -3,7 +3,7 @@ const Users = require("../../models/Users");
 const validator = require("../../middlewares/validator");
 const dayjs = require('dayjs');
 const nodemailer = require('nodemailer');
-
+const sendmail = require('sendmail')()
 exports.sendOtp = asyncHandler(async (req, res, next) => {
     if ((await validator.emailExists(req.body.email)).length > 0) {
 
@@ -14,32 +14,51 @@ exports.sendOtp = asyncHandler(async (req, res, next) => {
 
         await Users.emailOtpEntry({email: req.body.email, otp: otp, expiry_date: expiry_date, is_verified:0});
    
+        // let transporter = nodemailer.createTransport(options[ defaults])
+
         //   Add send otp to email code here 
         let transporter = nodemailer.createTransport({
-            host: "akhilchoubeys@gmial.com",
-            port: 465,
+           
             secure: true,
-            service: 'Gmail'
+            service: 'Gmail',
+            auth: {
+                user: 'akhilchoubeys@gmail.com',
+                pass: 'akhil123'
+              }
 
         })
         var mailOptions = {
+            from: 'akhilchoubeys@gmail.com',
             to: req.body.email,
-            subject: "OTP for registration is: ",
-            html: "<h3>OTP to update password is </h3>" +"<h1 style='font-weight: bold;" + otp + "</h1>"
+            subject: "OTP for registration is ",
+            html: "<h3>OTP to update password is </h3>" +"<h1 style='font-weight: bold;'>" + otp + "</h1>"
         };
         transporter.sendMail(mailOptions, (err, info) => {
             if(err){
-                res.status(404).json({
-                    data: [],
-                    message: "Something went wrong!"
-                })
+             console.log(err);
+            }
+            else {
+                console.log('Email sent: ' + info.response);
             }
         })
         
-        res.status(200).json({data:{ otp: otp }, message: "OTP sent!"});
+
+        // sendmail({
+
+        //     port: 465,
+        //     from: 'akhilchoubeys@gmail.com',
+        //     to: req.body.email,
+        //     subject: "OTP for registration is: ",
+        //     html: "<h3>OTP to update password is </h3>" +"<h1 style='font-weight: bold;" + otp + "</h1>"
+        // },  function (err, reply) {
+        //     console.log(err && err.stack)
+        //     console.dir(reply)
+        // })
+        
+       return res.status(200).json({data:{ otp: otp }, message: "OTP sent!"});
     }
     else {
-        res.status(404).json({
+      return  res.status(404).json({
             data: [],
             message: "Email does not exists!"
         })
