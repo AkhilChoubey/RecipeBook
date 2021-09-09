@@ -6,6 +6,7 @@ import Footer from './Footer';
 import img from './FOODIE.png';
 import Typewriter from 'typewriter-effect';
 import Contact from './Contact';
+import Contact2 from './Contact2';
 
 
 const Home = () => {
@@ -41,7 +42,7 @@ const Home = () => {
         </div>
         </div>
         </section>
-        <Contact />
+        <Contact2 />
         <Footer />
     </div>
 }

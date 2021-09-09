@@ -59,7 +59,18 @@ const Contact2 =  ()=>{
         }
     }
 
- 
+    function linkedin(){
+        window.location.href='https://www.linkedin.com/in/akhil-choubey-376887192';
+    }
+    function github(){
+        window.location.href='https://github.com/AkhilChoubey';
+    }
+    function facebook(){
+        window.location.href='https://www.facebook.com/profile.php?id=100009258792168';
+    }
+    function twitter(){
+        window.location.href='https://twitter.com/AkhilKrChoubey1?s=08';
+    }
 
     return <>
     <section id="contact" style={{background: `url(${conBg})` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} > 
@@ -75,13 +86,13 @@ const Contact2 =  ()=>{
        
       <div className="form-group">
         <div className="col-sm-12">
-          <input type="text" className="form-control" id="name" onChange={handleName} placeholder="NAME" name="name"  style={{marginBottom : '10px'}} data-aos='fade-up'/>
+          <input type="text" className="form-control" id="name" onChange={handleName} placeholder="ENTER YOUR NAME" name="name"  style={{marginBottom : '10px'}} data-aos='fade-up'/>
         </div>
       </div>
 
       <div className="form-group">
         <div className="col-sm-12">
-          <input type="email" className="form-control" id="email" onChange={handleEmail} placeholder="EMAIL" name="email"  style={{marginBottom : '10px'}} data-aos='fade-up' />
+          <input type="email" className="form-control" id="email" onChange={handleEmail} placeholder="ENTER YOUR EMAIL" name="email"  style={{marginBottom : '10px'}} data-aos='fade-up' />
         </div>
       </div>
 
@@ -113,17 +124,17 @@ const Contact2 =  ()=>{
       
             <HorizontalLine />
         <ul className="social-media-list" data-aos='zoom-in'>
-          <li><a href="https://www.linkedin.com/in/akhil-choubey-376887192" target="_blank" className="contact-icon">
-            <FaLinkedin style={{fontSize: "1.5rem"}}  className="fa " aria-hidden="true" /></a>
+          <li onClick={linkedin}><a className="contact-icon">
+            <FaLinkedin style={{fontSize: "1.5rem"}} className="fa "  /></a>
           </li>
-          <li><a href="https://github.com/AkhilChoubey" target="_blank" className="contact-icon">
-            <AiFillGithub style={{fontSize: "1.5rem"}}  className="fa" aria-hidden="true" /></a>
+          <li onClick={github}><a className="contact-icon">
+            <AiFillGithub style={{fontSize: "1.5rem"}} className="fa"/></a>
           </li>
-          <li><a href="https://www.facebook.com/profile.php?id=100009258792168" target="_blank" className="contact-icon">
-            <AiFillFacebook style={{fontSize: "1.5rem"}}  className="fa" aria-hidden="true" /></a>
+          <li onClick={facebook}><a className="contact-icon">
+            <AiFillFacebook style={{fontSize: "1.5rem"}} className="fa" /></a>
           </li>
-          <li><a href="https://twitter.com/AkhilKrChoubey1?s=08" target="_blank" className="contact-icon">
-            <AiOutlineTwitter style={{fontSize: "1.5rem"}}  className="fa" aria-hidden="true" /></a>
+          <li onClick={twitter}><a className="contact-icon">
+            <AiOutlineTwitter style={{fontSize: "1.5rem"}} className="fa" /></a>
           </li>       
         </ul>
         <hr />

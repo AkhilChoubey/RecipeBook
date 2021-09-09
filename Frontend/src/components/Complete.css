@@ -536,4 +536,17 @@ hr {
   .send-button {
     width: 99%;
   }
+  #contact-form{
+    width: 18rem;
+  }
+  .place{
+    margin-left: 12%;
+  }
+  .phone{
+    margin-left: 12%;
+  }
+  .gmail{
+    margin-left:5%;
+    
+  }
 }
