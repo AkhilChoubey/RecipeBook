@@ -17,6 +17,7 @@ import MealPlaner from './MealPlaner';
 import MealSearch from './MealSearch';
 import ResetPass from './Auth/ResetPass';
 import NewPass from './Auth/NewPass';
+import Contact2 from './Contact2';
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
          <Route path="/search" component={withRouter(Search)}/>
          {/* <Route path="/about" component={withRouter(About)}/> */}
          <Route path="/contact" component={withRouter(Contact)}/>
+         <Route path="/contact2" component={withRouter(Contact2)}/>
          <Route path="/meal" component={withRouter(MealSearch)}/>
         </Switch>
     </Router>     
