@@ -42,7 +42,7 @@ const Contact2 =  ()=>{
     function  handleMessage(e){
         getMessage(e.target.value);
     }
-    
+
     function handleChange(e){
         e.preventDefault();
         if(name === null) {
@@ -71,23 +71,23 @@ const Contact2 =  ()=>{
   
 
     
-    <form id="contact-form" className="form-horizontal" role="form" >
+    <form id="contact-form" className="form-horizontal" onSubmit={handleChange} >
        
       <div className="form-group">
         <div className="col-sm-12">
-          <input type="text" className="form-control" id="name" placeholder="NAME" name="name" value="" style={{marginBottom : '10px'}} required data-aos='fade-up'/>
+          <input type="text" className="form-control" id="name" onChange={handleName} placeholder="NAME" name="name"  style={{marginBottom : '10px'}} data-aos='fade-up'/>
         </div>
       </div>
 
       <div className="form-group">
         <div className="col-sm-12">
-          <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" value="" style={{marginBottom : '10px'}} required data-aos='fade-up' />
+          <input type="email" className="form-control" id="email" onChange={handleEmail} placeholder="EMAIL" name="email"  style={{marginBottom : '10px'}} data-aos='fade-up' />
         </div>
       </div>
 
-      <textarea className="form-control" rows="10" placeholder="MESSAGE" name="message" style={{marginBottom : '10px'}} required data-aos='fade-down'></textarea>
+      <textarea className="form-control" rows="10" onChange={handleMessage} placeholder="MESSAGE" name="message" style={{marginBottom : '10px'}} required data-aos='fade-down'></textarea>
       
-      <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+      <button className="btn btn-primary send-button" id="submit" onClick={handleChange}  type="submit" value="SEND">
         <div className="alt-send-button">
           <RiSendPlaneFill style={{fontSize: "1.5rem"}}/><span className="send-text">SEND</span>
         </div>
