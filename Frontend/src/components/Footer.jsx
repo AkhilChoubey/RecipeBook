@@ -4,15 +4,24 @@ import {FaLinkedin} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
 import {AiFillFacebook} from "react-icons/ai";
 import {AiOutlineTwitter} from "react-icons/ai";
-
+import Wave from 'react-wavify';
 
 const Footer=()=>{
     return (
-        <>
+        <div style={{background: 'black'}}>
+        <Wave fill='#fff'
+        // '#4fcef5'
+    paused={false}
+    options={{
+        height: 20,
+        amplitude: 30,
+        speed: 0.2,
+        points: 4
+    }} />
           <footer className="footer-container" style={{marginTop: "0"}}>
          
               <div className="copy">
-                  <p>&copy; AkhilChoubey</p>
+                  <p style={{color: 'black'}}>&copy; AkhilChoubey</p>
               </div>
               <div className="logo">
               <a href="https://www.linkedin.com/in/akhil-choubey-376887192" style={{paddingLeft: "35px"}}><FaLinkedin style={{color: 'black'}}/></a>
@@ -31,7 +40,7 @@ const Footer=()=>{
 
           </footer>
 
-        </>
+        </div>
     )
 }
 

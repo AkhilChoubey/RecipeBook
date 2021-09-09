@@ -48,7 +48,7 @@ function FinalNav(props){
     </button>
            <div className="collapse navbar-collapse nav-final" id="navbarSupportedContent" >
            <form className="d-flex search">
-        <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" style={{width: "17rem", borderRadius: "25px"}} />
+        <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" style={{width: "17rem", borderRadius: "25px",background: 'white'}} />
         <a type="submit" onClick={handleFind} style={{paddingLeft: "4px" ,fontSize: "23px"}}><BsSearch /></a>
         {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
