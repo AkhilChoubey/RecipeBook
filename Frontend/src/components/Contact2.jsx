@@ -11,7 +11,9 @@ import {FaLinkedin} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
 import {AiFillFacebook} from "react-icons/ai";
 import {AiOutlineTwitter} from "react-icons/ai";
-import conBg from './lapy2.jpg';
+// import conBg from './lapy2.jpg';
+import conBg from './connew.jpg';
+// import conBg from './connew2.jpg'; 
 
 
 const Contact2 =  ()=>{
