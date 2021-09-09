@@ -95,7 +95,7 @@ const Contact = () => {
             </div> */}
 
             
-            <button className=" btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" onClick={{handleChange}} type="submit" style = {{width: "100%"}} data-aos='zoom-in'>Send</button>
+            <button className=" btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" onClick={handleChange} type="submit" style = {{width: "100%"}} data-aos='zoom-in'>Send</button>
 
         </form>
       
