@@ -11,6 +11,7 @@ import Slider from './Slider';
 import Contact from './Contact';
 import MealSearch from './MealSearch';
 import newbg from './thai-food.jpg';
+import Contact2 from './Contact2';
 
  
 const FinalHome = (props) => {
@@ -44,7 +45,8 @@ const FinalHome = (props) => {
     <Healthy />
     
     <Slider />
-    <Contact />
+    {/* <Contact /> */}
+    <Contact2 />
     <Footer />
     
     </div>
