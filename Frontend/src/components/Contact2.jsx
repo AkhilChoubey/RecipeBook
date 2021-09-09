@@ -100,7 +100,7 @@ const Contact2 =  ()=>{
 
       <textarea className="form-control" rows="10" onChange={handleMessage} placeholder="MESSAGE" name="message" style={{marginBottom : '10px'}} required data-aos='fade-down'></textarea>
       
-      <button className="btn btn-primary send-button" id="submit" onClick={handleChange}  type="submit" value="SEND">
+      <button className="btn btn-danger send-button" id="submit" onClick={handleChange}  type="submit" value="SEND">
         <div className="alt-send-button">
           <RiSendPlaneFill style={{fontSize: "1.5rem"}}/><span className="send-text">SEND</span>
         </div>
