@@ -29,6 +29,38 @@ const Contact2 =  ()=>{
         Aos.init({duration: 2000});
     }, []);
 
+    const [name,getName] = useState(null);
+    const [email,getEmail] = useState(null);
+    const [message,getMessage] = useState(null);
+    
+   function handleName(e){
+        getName(e.target.value);
+    }
+    function  handleEmail(e){
+        getEmail(e.target.value);
+    }
+    function  handleMessage(e){
+        getMessage(e.target.value);
+    }
+    
+    function handleChange(e){
+        e.preventDefault();
+        if(name === null) {
+            swal({title: "Name cannot be empty " ,icon: "error" });
+        } 
+        else if(email === null) {
+            swal({title : "Email cannot be empty " ,icon: "error" });
+        }
+        else if(message === null) {
+            swal({title: "Message cannot be empty " ,icon: "error" });
+        }
+        else {
+        swal( "Submition Successful ","Thanks for Contacting Us" , "success" );
+        }
+    }
+
+ 
+
     return <>
     <section id="contact" style={{background: 'black'}} > 
     {/* data-aos='fade-down'> */}
