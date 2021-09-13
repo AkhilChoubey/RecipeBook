@@ -16,7 +16,7 @@ import conBg from './connew.jpg';
 // import conBg from './connew2.jpg'; 
 
 
-const Contact2 =  ()=>{
+const Contact2 = ()=>{
 
     const HorizontalLine = () => (
         <hr
