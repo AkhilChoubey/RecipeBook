@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "test",
+    
     "winstart": "SET NODE_ENV=production && node server",
     "start": "NODE_ENV=production node server",
     "dev": "nodemon server"
