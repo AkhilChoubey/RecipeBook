@@ -3,11 +3,6 @@ import {BsSearch} from 'react-icons/bs';
 
 import { useHistory } from 'react-router';
 import MealPlaner from './MealPlaner';
-//for meals
-// https://api.spoonacular.com/mealplanner/generate?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&timeFrame=day&targetCalories=2500&diet=vegetarian
-
-//for image
-// https://api.spoonacular.com/recipes/1531955/information?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&includeNutrition=false
 
 
 

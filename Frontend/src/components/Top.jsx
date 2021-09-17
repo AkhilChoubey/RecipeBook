@@ -11,37 +11,9 @@ const Top = () =>{
     useEffect(() => {
         Aos.init({duration: 2000});
     }, []);
-
-   // const [link, setPosts] = useState(null);
-    
-    //componentDidMount
-
      
         
-    // 000ac1e28d8a4064a342f4bca67180a6
-          //  useEffect( () =>{
-        // let link;
-        // //     const tryLink = () =>
-        // //   {
-        //      fetch('https://api.spoonacular.com/recipes/random?apiKey=000ac1e28d8a4064a342f4bca67180a6&number=6')
-        //         .then(response => 
-        //             response.json()   
-        //         ).then((data)=>{
-        //            // setPosts(data);
-        //            link = data;
-        //             console.log(data)
-        //         })
-        //         .catch((e)=> console.log(e))         
-           
-            //}
-            
-        //    },[]);
-        // const res =  await axios.get('https://api.spoonacular.com/recipes/random?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&number=5')
-        // const link = res.data.recipes;
-
-   // const value = await axios.get('https://api.spoonacular.com/recipes/random?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&number=6');
     
-  // console.log(link); //.recipes[0].image
     return <div className="top-recipe" >
         <div  className="eleven" data-aos='fade-up'>
             <h1 className="text-center" style={{paddingTop: "120px"}}>Top Recipes</h1>
