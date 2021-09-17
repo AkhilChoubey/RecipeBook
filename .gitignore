@@ -1,2 +1,5 @@
 Frontend/node_modules
+Fontend/react.env
+
 Backend/node_modules
+Backend/config/config.env

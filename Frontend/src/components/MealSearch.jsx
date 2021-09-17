@@ -28,7 +28,7 @@ const MealSearch = () => {
     function handleFind(){
         let getCalories = cal;
 
-        fetch(`https://api.spoonacular.com/mealplanner/generate?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&timeFrame=day&targetCalories=${getCalories}&diet=vegetarian`)
+        fetch(`https://api.spoonacular.com/mealplanner/generate?apiKey=${REACT_APP_API_KEY}&timeFrame=day&targetCalories=${getCalories}&diet=vegetarian`)
         .then(response => response.json())
         .then((data)=>{
           // console.log(data)
@@ -40,7 +40,7 @@ const MealSearch = () => {
 
         //   console.log(data.meals[0].id)
         for(var i=0;i<3;i++){
-           fetch(`https://api.spoonacular.com/recipes/${data.meals[i].id}/information?apiKey=7b1f4ee3530d45dd9f612707cbeb22cf&includeNutrition=false`)
+           fetch(`https://api.spoonacular.com/recipes/${data.meals[i].id}/information?apiKey=${REACT_APP_API_KEY}&includeNutrition=false`)
            .then(res => res.json())
            .then((data) => {
             //   console.log(data.image);
