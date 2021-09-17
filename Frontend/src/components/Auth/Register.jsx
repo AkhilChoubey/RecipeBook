@@ -5,7 +5,8 @@ import { withRouter } from 'react-router';
 
 import { useHistory } from 'react-router';
 import swal from 'sweetalert';
- 
+  
+
 const Register = () => {
 
     const history = useHistory();
