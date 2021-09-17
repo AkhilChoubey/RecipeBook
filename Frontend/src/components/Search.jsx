@@ -1,7 +1,6 @@
 import React from 'react';
 import SElement from './SElement';
-import blob from './blob.svg';
-import wave from './wave.svg';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Wave from 'react-wavify';

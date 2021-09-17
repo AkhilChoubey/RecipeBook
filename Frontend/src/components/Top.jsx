@@ -1,6 +1,6 @@
-import React ,{useState, useEffect} from 'react';
+import React ,{ useEffect} from 'react';
 import Element from './Element';
-import blob from './blob.svg';
+
 import wave from './wave.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

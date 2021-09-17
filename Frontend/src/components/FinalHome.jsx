@@ -1,14 +1,14 @@
 import React from 'react';
 import FinalNav from './FinalNav';
-import bg from './foodNew.jpg';
+
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import Top from './Top';
-import ReactTextTransition, { presets } from "react-text-transition";
+
 import Typewriter from 'typewriter-effect';
 import Healthy from './Healthy';
 import Slider from './Slider';
-import Contact from './Contact';
+
 import MealSearch from './MealSearch';
 import newbg from './thai-food.jpg';
 import Contact2 from './Contact2';

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import {BsSearch} from 'react-icons/bs';
-import Search from './Search';
+
 import { useHistory } from 'react-router';
 
 

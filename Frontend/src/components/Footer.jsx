@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+
 import {FaLinkedin} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
 import {AiFillFacebook} from "react-icons/ai";

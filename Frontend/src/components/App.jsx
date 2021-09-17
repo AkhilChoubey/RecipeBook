@@ -3,7 +3,7 @@ import Login from './Auth/Login';
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { BrowserRouter as Router, Switch, Route , Link} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Register from './Auth/Register';
 import Home from './Home';
 import FinalHome from './FinalHome';
@@ -11,9 +11,9 @@ import Top from './Top';
 import { withRouter } from 'react-router';
 import Healthy from './Healthy';
 import Search from './Search';
-import About from './About';
+
 import Contact from './Contact';
-import MealPlaner from './MealPlaner';
+
 import MealSearch from './MealSearch';
 import ResetPass from './Auth/ResetPass';
 import NewPass from './Auth/NewPass';

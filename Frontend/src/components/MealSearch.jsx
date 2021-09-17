@@ -1,8 +1,6 @@
-import React , {useEffect , useState} from 'react';
+import React , { useState} from 'react';
 import {BsSearch} from 'react-icons/bs';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import Element from './Element';
+
 import { useHistory } from 'react-router';
 import MealPlaner from './MealPlaner';
 //for meals

@@ -1,4 +1,4 @@
-import React ,{useState, useEffect} from 'react';
+import React ,{ useEffect} from 'react';
 import Element from './Element';
 import wave from './wave.svg';
 import Aos from 'aos';
