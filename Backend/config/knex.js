@@ -11,3 +11,9 @@ const knex = require('knex')({
 });
 
 module.exports = knex;
+
+
+// DB_HOST="localhost"
+// DB_USER="root"
+// DB_PASS="634@Akhil"
+// DB_NAME="userDetail"

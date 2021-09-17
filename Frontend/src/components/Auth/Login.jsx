@@ -1,9 +1,8 @@
 // import react from 'react';
 import axios from 'axios';
 import './Login.css';
-import Register from './Register';
-import Home from '../Home';
-import { BrowserRouter as Router, Switch, Route , Link, Redirect} from 'react-router-dom';
+
+import {  Link} from 'react-router-dom';
 import { withRouter } from 'react-router';
 import { useHistory } from 'react-router';
 import swal from 'sweetalert';

@@ -23,7 +23,7 @@ exports.sendOtp = asyncHandler(async (req, res, next) => {
             service: 'Gmail',
             auth: {
                 user: 'akhilchoubeys@gmail.com',
-                pass: 'akhil123'
+                pass: process.env.EMAIL_PASS
               }
 
         })
