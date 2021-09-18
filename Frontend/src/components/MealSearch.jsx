@@ -1,7 +1,7 @@
 import React , { useState} from 'react';
 import {BsSearch} from 'react-icons/bs';
 
-import { useHistory } from 'react-router';
+//import { useHistory } from 'react-router';
 import MealPlaner from './MealPlaner';
 
 
@@ -9,7 +9,7 @@ import MealPlaner from './MealPlaner';
 
 const MealSearch = () => {
 
-    const history = useHistory(); 
+   // const history = useHistory(); 
     const [cal, setCal]  = useState(null);
     const [result, setResult] = useState([]);
     const [image, setImage] = useState([]);
@@ -61,7 +61,7 @@ const MealSearch = () => {
               </div> 
              <form className="d-flex meal-search" onSubmit={handleFind} data-aos='fade-up'>
         <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Enter Your Daily Calories Count" aria-label="Search" style={{  width: '33rem',borderRadius: '25px', height: '3rem',background: 'white'}} />
-        <a type="submit" onClick={handleFind} style={{paddingLeft: '18px' ,fontSize: '26px'}}><BsSearch /></a>
+        <button type="submit" onClick={handleFind} style={{paddingLeft: '18px' ,fontSize: '26px'}} ><BsSearch /></button>
         {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
          { result.meals && 

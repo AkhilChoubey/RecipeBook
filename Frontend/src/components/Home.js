@@ -21,7 +21,7 @@ const Home = () => {
             <div className="col-10 mx-auto" >
             <div className="row">
             <div className="col-lg-6 order-1 order-lg-2 header-img">
-                    <img  src={img}  className="img-fluid animated" alt="About Image"/>
+                    <img  src={img}  className="img-fluid animated" alt="404 not found!"/>
                 </div> 
                 <div id="title2" className="titleHeader col-md-6 pt-5 pt-lg-0 order-2 order-lg- d-flex justify-content-center flex-column" >
               

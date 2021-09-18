@@ -5,11 +5,12 @@ import {BsSearch} from 'react-icons/bs';
 import { useHistory } from 'react-router';
 
 
+
 function FinalNav(props){
 
     const history = useHistory(); 
 
-    const [find, setFind] = useState(null);
+   // const [find, setFind] = useState(null);
     const [rest, setRes] = useState(null);
 
     function handleChange(e){
@@ -53,7 +54,7 @@ function FinalNav(props){
            <div className="collapse navbar-collapse nav-final" id="navbarSupportedContent" >
            <form className="d-flex search">
         <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" style={{width: "17rem", borderRadius: "25px",background: 'white'}} />
-        <a type="submit" onClick={handleFind} style={{paddingLeft: "4px" ,fontSize: "23px"}}><BsSearch /></a>
+        <button type="submit" onClick={handleFind} style={{paddingLeft: "4px" ,fontSize: "23px"}}><BsSearch /></button>
         {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
            <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>

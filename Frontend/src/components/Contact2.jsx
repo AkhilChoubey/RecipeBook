@@ -77,7 +77,7 @@ const Contact2 = ()=>{
     <section id="contact" style={{background: `url(${conBg})` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} > 
     {/* data-aos='fade-down'> */}
   
-  <h1 className="section-header eleven" data-aos='fade-down' >Contact</h1>
+  <h1 className="section-header eleven" data-aos='fade-up' >Contact</h1>
   
   <div className="contact-wrapper" >
   
@@ -125,16 +125,16 @@ const Contact2 = ()=>{
       
             <HorizontalLine />
         <ul className="social-media-list" data-aos='zoom-in'>
-          <li onClick={linkedin}><a className="contact-icon">
+          <li onClick={linkedin}><a href='https://www.linkedin.com/in/akhil-choubey-376887192' className="contact-icon">
             <FaLinkedin style={{fontSize: "1.5rem"}} className="fa "  /></a>
           </li>
-          <li onClick={github}><a className="contact-icon">
+          <li onClick={github}><a href='https://github.com/AkhilChoubey' className="contact-icon">
             <AiFillGithub style={{fontSize: "1.5rem"}} className="fa"/></a>
           </li>
-          <li onClick={facebook}><a className="contact-icon">
+          <li onClick={facebook}><a href='https://www.facebook.com/profile.php?id=100009258792168' className="contact-icon">
             <AiFillFacebook style={{fontSize: "1.5rem"}} className="fa" /></a>
           </li>
-          <li onClick={twitter}><a className="contact-icon">
+          <li onClick={twitter}><a href='https://twitter.com/AkhilKrChoubey1?s=08' className="contact-icon">
             <AiOutlineTwitter style={{fontSize: "1.5rem"}} className="fa" /></a>
           </li>       
         </ul>

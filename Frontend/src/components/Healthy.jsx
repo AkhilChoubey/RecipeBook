@@ -12,7 +12,7 @@ const Healthy = () =>{
  
     return <div style={{background: "white"}}>
         <div style={{margin: "0"}}>
-        <img src={wave} style={{padding: "0", width: "100%", transform: "rotate(180deg)"}} data-aos='fade-up'/>
+        <img src={wave} style={{padding: "0", width: "100%", transform: "rotate(180deg)"}} data-aos='fade-up' alt='404 not found!' />
         <div className="seven">
             <h1 className="text-center">Healthy Recipes</h1>
             </div>    

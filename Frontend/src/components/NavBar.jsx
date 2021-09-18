@@ -20,9 +20,9 @@ function NavBar(){
     </button>
            <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/login' activeclassName="menu-active" className="nav-link">Login</Link><span></span></li>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/signup' activeclassName="menu-active" className="nav-link">Sign Up</Link><span></span></li>
-                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/contact' activeclassName="menu-active" className="nav-link">Contact</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/login' activeclassname="menu-active" className="nav-link">Login</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/signup' activeclassname="menu-active" className="nav-link">Sign Up</Link><span></span></li>
+                <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/contact' activeclassname="menu-active" className="nav-link">Contact</Link><span></span></li>
                 {/* <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/about' activeclassName="menu-active" className="nav-link">About</Link><span></span></li> */}
             </ul>
             </div>
