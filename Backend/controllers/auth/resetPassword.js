@@ -2,6 +2,8 @@ const asyncHandler = require("../../utils/async");
 const Users = require("../../models/Users");
 const bcrypt = require("bcryptjs");
 const dayjs = require("dayjs");
+const cors = require("cors");
+app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
 
 exports.resetUsingOtp = asyncHandler(async (req, res, next) => {
 

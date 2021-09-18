@@ -4,6 +4,9 @@ const validator = require("../../middlewares/validator");
 const dayjs = require('dayjs');
 const nodemailer = require('nodemailer');
 const sendmail = require('sendmail')()
+const cors = require("cors");
+app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
+
 exports.sendOtp = asyncHandler(async (req, res, next) => {
     if ((await validator.emailExists(req.body.email)).length > 0) {
 
@@ -31,7 +34,7 @@ exports.sendOtp = asyncHandler(async (req, res, next) => {
             from: 'akhilchoubeys@gmail.com',
             to: req.body.email,
             subject: "OTP for RecipeBook ",
-            html: "<h3>OTP to update password is </h3>" +"<h1 style='font-weight: bold;'>" + otp + "</h1>"
+            html: "<h3>OTP to update password is </h3>" +"<h1 style='font-weight: bold;'>" + otp + "</h1><br><br><p>NOTE: This OTP is only valid for 15 minutes.</p>"
         };
         transporter.sendMail(mailOptions, (err, info) => {
             if(err){

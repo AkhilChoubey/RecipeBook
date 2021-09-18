@@ -2,6 +2,9 @@ const asyncHandler = require("../../utils/async");
 const Users = require("../../models/Users");
 const JWTHelper = require("../../utils/jwt");
 const bcrypt = require("bcryptjs");
+const cors = require("cors");
+
+app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
 
 exports.loginByPassword = asyncHandler(async (req, res, next) => {
   let accounts = await Users.getUser({'email': req.body.email, 'is_deleted': 0});

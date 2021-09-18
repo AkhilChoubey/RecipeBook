@@ -2,6 +2,8 @@ const asyncHandler = require("../../utils/async");
 const Users = require("../../models/Users");
 const bcrypt = require("bcryptjs");
 const validator = require("../../middlewares/validator");
+const cors = require("cors");
+app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
 
 //Create Account
 exports.createAccount = asyncHandler(async (req, res, next) => {
