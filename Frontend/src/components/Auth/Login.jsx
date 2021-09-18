@@ -15,7 +15,7 @@ const Login = () => {
     return <div className="align">
         <div className="grid align__item">
         <div className="register">
-        <form onSubmit = {(e) => {login(e);  }} className="form">
+        <form className='login-type' onSubmit = {(e) => {login(e);  }} className="form">
             <h2>Login</h2>
             
             <div className="form__field">
