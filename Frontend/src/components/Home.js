@@ -31,8 +31,8 @@ const Home = () => {
                 <div id="title2" className="titleHeader col-md-6 pt-5 pt-lg-0 order-2 order-lg- d-flex justify-content-center flex-column" >
               
 
-                <h1>Welcome to the world of <strong className="brand-name">  <Typewriter options={{  strings: ['Recipes', 'Magic', 'Taste'],  autoStart: true,  loop: true,changeDelay:2 }}/></strong></h1>
-                <h2  style={{color:"white"}}>Please Login or Sign Up to access the complete Website.</h2>
+                <h1 >Welcome to the world of <strong className="brand-name">  <Typewriter options={{  strings: ['Recipes', 'Magic', 'Taste'],  autoStart: true,  loop: true,changeDelay:2 }}/></strong></h1>
+                <h2 style= {{fontSize: '1.75rem'}} style={{color:"white"}}>Please Login or Sign Up to access the complete Website.</h2>
                 <div style={{marginTop: '5px'}} >
                     <Link to='/login' className="btn-get-started ">Login</Link>
                     <Link to='/signup' className="btn-get-started " style={{marginLeft: "5%"}}>Sign Up</Link>
