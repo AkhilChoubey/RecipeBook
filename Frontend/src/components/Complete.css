@@ -70,8 +70,8 @@ font-family: 'Merienda', cursive;
 }
 
 #title2{
-  width:47%;
-  text-align: end;
+  width:48%;
+  text-align: center;
 }
 
 .hhh{
@@ -105,9 +105,10 @@ font-family: 'Merienda', cursive;
 .header-img{
   text-align: right;
 }
-#header .animated{
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
+/* #header .animated{
+  /* animation: up-down 2s ease-in-out infinite alternate-reverse both; 
+  animation: zoom-in 2s ease-in-out infinite alternate-reverse both; 
+} */
 
 .top-recipe{
   background: rgba(255,255,255,1) ;
@@ -176,25 +177,6 @@ font-family: 'Merienda', cursive;
 }
 
 
-@-webkit-keyframes up-down{
-  0%{
-transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(-10px);
-
-  }
-}
-
-@keyframes up-down{
-  0%{
-transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(-10px);
-
-  }
-}
 
 
 
