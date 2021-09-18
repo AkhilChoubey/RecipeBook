@@ -27,7 +27,7 @@ const knex = require('knex')({
 knex.connect();
 
 
-
+app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
 
 
 
