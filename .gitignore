@@ -1,5 +1,5 @@
 Frontend/node_modules
-Frontend/react.env
+Frontend/react.env.deployment.local
 
 Backend/node_modules
 Backend/config/config.env
