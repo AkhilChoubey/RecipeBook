@@ -15,7 +15,7 @@ const Register = () => {
         <div className="grid align__item">
         <div className="register">
         <form onSubmit = {(e) =>  {register(e); } }className="form">
-            <h2>SIGN UP</h2>
+            <h2 className='login-type'>SIGN UP</h2>
             <div className="form__field">
             <input type="text" id="first" placeholder="First Name" /> 
             </div>

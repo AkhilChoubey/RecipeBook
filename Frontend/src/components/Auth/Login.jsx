@@ -15,8 +15,8 @@ const Login = () => {
     return <div className="align">
         <div className="grid align__item">
         <div className="register">
-        <form className='login-type' onSubmit = {(e) => {login(e);  }} className="form">
-            <h2>Login</h2>
+        <form  onSubmit = {(e) => {login(e);  }} className="form">
+            <h2 className='login-type'>Login</h2>
             
             <div className="form__field">
             <input id="email" type="email" placeholder="Enter your email" /> 
