@@ -20,7 +20,11 @@ function FinalNav(props){
     function handleFind(e){
         //<Search key="1" imgsrc={} title={} recipe={} time={} />
         let result = rest;
-        fetch(`https://api.spoonacular.com/recipes/complexSearch?number=6&apiKey=${process.env.REACT_APP_API_KEY}&maxFat=25&maxCalories=2000&query=${result}`)
+
+        const apiKEY = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_API_KEY : process.env.REACT_APP_API_KEY;
+
+
+        fetch(`https://api.spoonacular.com/recipes/complexSearch?number=6&apiKey=${apiKEY}&maxFat=25&maxCalories=2000&query=${result}`)
         .then(response => response.json())
         .then((data)=>{
            // console.log(data)
