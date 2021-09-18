@@ -45,7 +45,8 @@ function login(e){
     let request = {
         email: document.getElementById("email").value
     }
-    axios.post('http://localhost:4000/v1/auth/sendOtpToEmail', request)
+    axios.post('https://intense-anchorage-09653.herokuapp.com/v1/auth/sendOtpToEmail', request)
+    // axios.post('http://localhost:4000/v1/auth/sendOtpToEmail', request)
    // axios.post('http://192.168.43.120:4100/v1/auth/login', request)
     .then(res => {
        // console.log(res.data);

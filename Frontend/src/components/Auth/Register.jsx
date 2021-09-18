@@ -55,7 +55,8 @@ function register(e){
         email: document.getElementById("email").value,
         password: document.getElementById("password").value
     }
-    axios.post('http://localhost:4000/v1/auth/register', request)
+    axios.post('https://intense-anchorage-09653.herokuapp.com/v1/auth/register', request)
+    // axios.post('http://localhost:4000/v1/auth/register', request)
     // axios.post('http://192.168.43.120:4100/v1/auth/register', request)
 
     .then(res => {
