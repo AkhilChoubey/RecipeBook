@@ -5,7 +5,7 @@ const dayjs = require('dayjs');
 const nodemailer = require('nodemailer');
 const sendmail = require('sendmail')()
 const cors = require("cors");
-app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
+//app.use(cors({origin: 'https://akhilrecipeapp.netlify.app/'}));
 
 exports.sendOtp = asyncHandler(async (req, res, next) => {
     if ((await validator.emailExists(req.body.email)).length > 0) {
