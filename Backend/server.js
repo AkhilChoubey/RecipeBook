@@ -10,6 +10,15 @@ const override = require('./override');
 const cors = require("cors");
 const errorHandler = require("./utils/errorHandler");
 
+var cors_proxy = require('cors-anywhere');
+cors_proxy.createServer({
+    originWhitelist: [], // Allow all origins
+    requireHeader: ['origin', 'x-requested-with'],
+    removeHeaders: ['cookie', 'cookie2']
+})
+
+
+
 const app = express();
 
 
