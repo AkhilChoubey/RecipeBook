@@ -6,7 +6,7 @@ const knex = require('knex')({
       user : process.env.MYSQL_ADDON_USER,
       password : process.env.MYSQL_ADDON_PASSWORD,
       database : process.env.MYSQL_ADDON_DB,
-      uri : process.env.MYSQL_ADDON_URI
+      socketPath : process.env.MYSQL_ADDON_URI
     },
     pool: { min: 0, max: 50 },
 });
