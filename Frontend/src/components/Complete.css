@@ -45,7 +45,8 @@ font-family: 'Merienda', cursive;
   margin-right: 48px;
 }
 .nav-final{
-  margin-left: 3%;
+  margin-left: 0;
+  font-size: 21px;
 }
 
 #header{
