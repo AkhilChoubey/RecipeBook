@@ -12,19 +12,6 @@ const errorHandler = require("./utils/errorHandler");
 
 const app = express();
 
-const knex = require('knex')({
-  client: 'mysql',
-  
-  connection: {
-    host : process.env.DB_HOST,
-    user : process.env.DB_USER,
-    password : process.env.DB_PASS,
-    database : process.env.DB_NAME,
-  },
-  pool: { min: 0, max: 50 },
-});
-
-knex.connect();
 
 
 app.use(cors({origin: 'https://akhilrecipeapp.netlify.app'}));
