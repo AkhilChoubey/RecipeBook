@@ -22,7 +22,7 @@ const NewPass = () => {
             </div>
              */}
              <div className="form__field">
-            <input id="otp" type="text" placeholder="Enter sent OTP" autoComplete="false"  />
+            <input id="otp" type="text" placeholder="Enter received OTP" autoComplete="false"  />
             
             </div>
             <div className="form__field">
