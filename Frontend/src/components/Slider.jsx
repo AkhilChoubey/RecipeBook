@@ -9,11 +9,7 @@ import { Paper } from "@material-ui/core";
  
 
     return <div style={{background: "white"}}> <Carousel navButtonsAlwaysVisible="true" interval="5000" >
-      {/* {
-        items.map((items, i) => {
-          <Item key={i} item={items} />
-        })
-      } */}
+
       
       <Paper>
       <div className="slider-div" >

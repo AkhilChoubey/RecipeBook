@@ -24,13 +24,6 @@ const Top = () =>{
                 <div className="col-10 top-elements" >
                     <div className="row gy-4">
 
-                        
-                        {/* <Element key={link[0].index} imgsrc={link[0].image} title={link[0].title} recipe={link[0].sourceUrl} time={link[0].readyInMinutes} />
-                        <Element key={link[1].index} imgsrc={link[1].image} title={link[5].title} recipe={link[1].sourceUrl} time={link[1].readyInMinutes} />
-                        <Element key={link[2].index} imgsrc={link[2].image} title={link[6].title} recipe={link[2].sourceUrl} time={link[2].readyInMinutes} />
-                        <Element key={link[3].index} imgsrc={link[3].image} title={link[7].title} recipe={link[3].sourceUrl} time={link[3].readyInMinutes} />
-                        <Element key={link[4].index} imgsrc={link[4].image} title={link[8].title} recipe={link[4].sourceUrl} time={link[4].readyInMinutes} /> */}
-
                         <Element key={665170} imgsrc={ "https://spoonacular.com/recipeImages/665170-556x370.jpg"} title={"White Chocolate Cherry Hand Pies"} recipe={ "https://www.foodista.com/recipe/T22BGDFV/white-chocolate-cherry-hand-pies"} time={45} />
                         <Element key={634854} imgsrc={"https://spoonacular.com/recipeImages/634854-556x370.jpg"} title={ "Berry Fruit Crumble"} recipe={ "https://www.foodista.com/recipe/67KX7C62/berry-fruit-crumble"} time={45} />
                         <Element key={659180} imgsrc= {"https://spoonacular.com/recipeImages/635552-556x370.jpg"} title={"Blueberry Vanilla Pie"} recipe={ "http://www.foodista.com/recipe/QQC5Y6J8/blueberry-vanilla-pie"} time={55} />

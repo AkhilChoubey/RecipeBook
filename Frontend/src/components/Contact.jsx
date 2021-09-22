@@ -87,13 +87,7 @@ const Contact = () => {
                 <textarea id="materialContactFormMessage" onChange={handleMessage} className="form-control md-textarea" rows="3"></textarea>
                 
             </div>
-
-        
-            {/* <div className="form-check">
-                <input type="checkbox" className="form-check-input" id="materialContactFormCopy" />
-                <label className="form-check-label" for="materialContactFormCopy">Send me a copy of this message</label>
-            </div> */}
-
+          
             
             <button className=" btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" onClick={handleChange} type="submit" style = {{width: "100%"}} data-aos='zoom-in'>Send</button>
 

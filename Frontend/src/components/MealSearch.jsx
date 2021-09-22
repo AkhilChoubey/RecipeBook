@@ -28,14 +28,9 @@ const MealSearch = () => {
         fetch(`https://api.spoonacular.com/mealplanner/generate?apiKey=${apiKEY}&timeFrame=day&targetCalories=${getCalories}&diet=vegetarian`)
         .then(response => response.json())
         .then((data)=>{
-          // console.log(data)
-        //  history.push({
-        //         pathname: '/meal',
-        //         state: {details: data}
-        // });
+
            setResult(data);
 
-        //   console.log(data.meals[0].id)
         for(var i=0;i<3;i++){
            fetch(`https://api.spoonacular.com/recipes/${data.meals[i].id}/information?apiKey=${apiKEY}&includeNutrition=false`)
            .then(res => res.json())
@@ -62,7 +57,7 @@ const MealSearch = () => {
              <form className="d-flex meal-search" onSubmit={handleFind} data-aos='fade-up'>
         <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Enter Your Daily Calories Count" aria-label="Search" style={{  width: '33rem',borderRadius: '25px', height: '3rem',background: 'white'}} />
         <div type="submit" onClick={handleFind} style={{paddingLeft: '18px' ,fontSize: '26px'}} ><BsSearch /></div>
-        {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
+        
         </form>
          { result.meals && 
          
@@ -70,7 +65,6 @@ const MealSearch = () => {
             <div className="row" >
                 <div className="col-10 top-elements" >
                     <div className="row gy-4">
-            {/* <Element key={result.meals[0].id} imgsrc={image[0]} recipe={data.sourceUrl} title={data.title} calories={400} fat={20} time = {data.readyInMinutes} /> */}
             <h3 style={{textAlign: 'center'}}>Total Calories: {result.nutrients.calories}</h3>
             <MealPlaner key={result.meals[0].id} imgsrc={image[0]} recipe={result.meals[0].sourceUrl} title={result.meals[0].title} time = {result.meals[0].readyInMinutes} for='Meal for Breakfast'/>
             <MealPlaner key={result.meals[1].id} imgsrc={image[1]} recipe={result.meals[1].sourceUrl} title={result.meals[1].title} time = {result.meals[1].readyInMinutes} for='Meal for Lunch' />

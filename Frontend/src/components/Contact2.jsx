@@ -10,9 +10,8 @@ import {FaLinkedin} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
 import {AiFillFacebook} from "react-icons/ai";
 import {AiOutlineTwitter} from "react-icons/ai";
-// import conBg from './lapy2.jpg';
 import conBg from './connew.jpg';
-// import conBg from './connew2.jpg'; 
+
 
 
 const Contact2 = ()=>{
@@ -75,7 +74,7 @@ const Contact2 = ()=>{
 
     return <>
     <section id="contact" style={{background: `url(${conBg})` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} > 
-    {/* data-aos='fade-down'> */}
+   
   
   <h1 className="section-header eleven" data-aos='fade-up' >Contact</h1>
   

@@ -30,13 +30,7 @@ const Footer=()=>{
                  <a href="https://twitter.com/AkhilKrChoubey1?s=08"><AiOutlineTwitter style={{color: 'black'}}/></a>
 
               </div>
-              {/* <div className="developer">
-                 <a href="https://www.linkedin.com/in/akhil-choubey-376887192"><FaLinkedin /></a>
-                 <a href="https://www.linkedin.com/in/akhil-choubey-376887192"><AiFillGithub /></a>
-                 <a href="https://www.linkedin.com/in/akhil-choubey-376887192"><AiFillFacebook /></a>
-                 <a href="https://www.linkedin.com/in/akhil-choubey-376887192"><AiOutlineTwitter /></a>
-                 
-              </div> */}
+       
 
           </footer>
 
