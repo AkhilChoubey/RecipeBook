@@ -108,10 +108,6 @@ font-family: 'Merienda', cursive;
 .header-img{
   text-align: right;
 }
-/* #header .animated{
-  /* animation: up-down 2s ease-in-out infinite alternate-reverse both; 
-  animation: zoom-in 2s ease-in-out infinite alternate-reverse both; 
-} */
 
 .top-recipe{
   background: rgba(255,255,255,1) ;
@@ -248,7 +244,14 @@ position: relative;
 
 /* Component heading */
 .eleven h1 {
-  font-size:30px;text-align:center; line-height:1.5em; padding-bottom:45px; font-family:"Playfair Display", serif; text-transform:uppercase;letter-spacing: 2px; color:#111;
+  font-size:30px;
+  text-align:center;
+  line-height:1.5em; 
+  padding-bottom:45px; 
+  font-family:"Playfair Display", serif;
+   text-transform:uppercase;
+   letter-spacing: 2px; 
+   color:#111;
 }
 
 

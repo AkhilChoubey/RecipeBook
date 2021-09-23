@@ -19,7 +19,6 @@ const Home = () => {
     return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`,backgroundSize:"auto", backgroundAttachment: "fixed" }} >
     <NavBar />
     
-    {/* <h1> {props.location.state.details.first_name}</h1> */}
     <section id="header" className="d-flex align-items-center">
         <div className="container-fluid ">
         <div className="row">

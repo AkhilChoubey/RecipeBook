@@ -10,7 +10,7 @@ function FinalNav(props){
 
     const history = useHistory(); 
 
-   // const [find, setFind] = useState(null);
+   
     const [rest, setRes] = useState(null);
 
     function handleChange(e){
@@ -19,7 +19,7 @@ function FinalNav(props){
     }
 
     function handleFind(e){
-        //<Search key="1" imgsrc={} title={} recipe={} time={} />
+    
         let result = rest;
 
         const apiKEY = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_API_KEY : process.env.REACT_APP_API_KEY;
@@ -55,19 +55,16 @@ function FinalNav(props){
            <form className="d-flex search">
         <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search" style={{width: "17rem", borderRadius: "25px",background: 'white'}} />
         <div type="submit" onClick={handleFind} style={{paddingLeft: "4px" ,fontSize: "23px"}}><BsSearch /></div>
-        {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
            <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/top' activeclassname="menu-active" className="nav-link">Top</Link><span></span></li>
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/healthy' activeclassname="menu-active" className="nav-link">Healthy</Link><span></span></li>
-                {/* <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/about' activeclassName="menu-active" className="nav-link">About</Link><span></span></li> */}
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/contact2' activeclassname="menu-active" className="nav-link">Contact</Link><span></span></li>
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/meal' activeclassname="menu-active" className="nav-link">MealMaker</Link><span></span></li>
                 <li className='nav-item menuitem' style={{marginRight: "30px"}}><Link to='/' activeclassname="menu-active" className="nav-link">Log out</Link><span></span></li>
 
             </ul>
             </div>
-            {/* <span className="slide"></span> */}
             </div>
         </nav>
         </div>

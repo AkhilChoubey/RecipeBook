@@ -1,7 +1,5 @@
 import React , { useState} from 'react';
 import {BsSearch} from 'react-icons/bs';
-
-//import { useHistory } from 'react-router';
 import MealPlaner from './MealPlaner';
 
 
@@ -9,7 +7,6 @@ import MealPlaner from './MealPlaner';
 
 const MealSearch = () => {
 
-   // const history = useHistory(); 
     const [cal, setCal]  = useState(null);
     const [result, setResult] = useState([]);
     const [image, setImage] = useState([]);
