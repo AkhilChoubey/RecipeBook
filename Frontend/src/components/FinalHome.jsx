@@ -20,7 +20,7 @@ const FinalHome = (props) => {
     let title = props.location.state.details.first_name;
 
 
-    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${newbg})`, backgroundAttachment: "fixed",backgroundRepeat: "no-repeat"}} >
+    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${newbg})`, backgroundAttachment: "fixed",backgroundRepeat: "no-repeat",backgroundSize: "cover"}} >
     <FinalNav title={title} />
     {/* <h1> {props.location.state.details.first_name}</h1> */}
     <section id="header" className="d-flex align-items-center">

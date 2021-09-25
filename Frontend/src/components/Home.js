@@ -16,7 +16,7 @@ const Home = () => {
         Aos.init({duration: 2000});
     }, []);
 
-    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`,backgroundSize:"auto", backgroundAttachment: "fixed" }} >
+    return <div style ={{ background : `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${bg})`,backgroundSize:"auto", backgroundAttachment: "fixed",backgroundSize: "cover" }} > 
     <NavBar />
     
     <section id="header" className="d-flex align-items-center">
