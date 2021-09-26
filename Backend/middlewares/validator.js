@@ -30,7 +30,7 @@ exports.loginForm = () => {
 exports.createAccountForm=()=>{
   return [
     body("email").trim().notEmpty().withMessage("Email is required").isEmail().withMessage("Email is not valid."),
-    body("password").trim().notEmpty().withMessage("Password is required").isLength({min:6}).withMessage("Password must be stleast 6 characters long."),
+    body("password").trim().notEmpty().withMessage("Password is required").isLength({min:6}).withMessage("Password must be atleast 6 characters long!"),
     body("dial_code").trim().notEmpty().withMessage("Dial code is required"),
     body("phone").trim().notEmpty().withMessage("Phone number is required").isLength({min:10 , max:10}).withMessage("Phone number must be of 10 digits"),
     body("gender").trim().notEmpty().withMessage("Gender is required"),
