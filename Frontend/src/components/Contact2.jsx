@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+
 import swal from 'sweetalert';
 import {ImLocation} from "react-icons/im";
 import {ImPhone} from "react-icons/im";
@@ -10,11 +11,13 @@ import {FaLinkedin} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
 import {AiFillFacebook} from "react-icons/ai";
 import {AiOutlineTwitter} from "react-icons/ai";
+// import conBg from './lapy2.jpg';
 import conBg from './connew.jpg';
+// import conBg from './connew2.jpg';
+import { withRouter } from 'react-router'; 
 
 
-
-const Contact2 = ()=>{
+const Contact = ()=>{
 
     const HorizontalLine = () => (
         <hr
@@ -74,9 +77,9 @@ const Contact2 = ()=>{
 
     return <>
     <section id="contact" style={{background: `url(${conBg})` , backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} > 
-   
+    {/* data-aos='fade-down'> */}
   
-  <h1 className="section-header eleven" data-aos='fade-up' >Contact</h1>
+  <h1 className="section-header eleven" data-aos='fade-down' >Contact</h1>
   
   <div className="contact-wrapper" >
   
@@ -99,9 +102,7 @@ const Contact2 = ()=>{
       <textarea className="form-control" rows="10" onChange={handleMessage} placeholder="MESSAGE" name="message" style={{marginBottom : '10px'}} required data-aos='fade-down'></textarea>
       
       <button className="btn btn-danger send-button" id="submit" onClick={handleChange}  type="submit" value="SEND">
-        <div className="alt-send-button">
-          <RiSendPlaneFill style={{fontSize: "1.5rem"}}/><span className="send-text">SEND</span>
-        </div>
+          <RiSendPlaneFill style={{fontSize: "1.5rem"}}/>
       
       </button>
       
@@ -112,29 +113,35 @@ const Contact2 = ()=>{
       <div className="direct-contact-container">
 
         <ul className="contact-list">
-          <li className="list-item"><ImLocation className="fa fa-2x" style={{fontSize: "1.5rem"}} data-aos='fade-down'/><span className="contact-text place" data-aos='fade-up'>Palamu, Jharkhand</span></li>
+          <li className="list-item"><ImLocation className="fa fa-2x" style={{fontSize: "1.5rem"}} data-aos='fade-down'/><span className="contact-text place" data-aos='fade-up'>Jharkhand</span></li>
           
           <li className="list-item"><ImPhone style={{fontSize: "1.5rem"}} data-aos='fade-down'  /><span className="contact-text phone"><a href="tel:9693480133" title="Give me a call" data-aos='fade-up'>+91 9693480133</a></span></li>
-          
-          <li className="list-item"><MdEmail style={{fontSize: "1.5rem"}} data-aos='fade-down' /><span className="contact-text gmail"><a href="mailto:akhilchoubeys@gmail.com" title="Send me an email" data-aos='fade-up'>akhilchoubeys@gmail.com</a></span></li>
-          
+                    
         </ul>
 
         <hr></hr>
       
             <HorizontalLine />
         <ul className="social-media-list" data-aos='zoom-in'>
-          <li onClick={linkedin}><a href='https://www.linkedin.com/in/akhil-choubey-376887192' className="contact-icon">
-            <FaLinkedin style={{fontSize: "1.5rem"}} className="fa "  /></a>
+          <li onClick={linkedin}>
+          <a href="https://www.linkedin.com/in/akhil-choubey-376887192" className="contact-icon"> 
+            <FaLinkedin style={{fontSize: "1.5rem"}} className="fa  "  />
+          </a>
           </li>
-          <li onClick={github}><a href='https://github.com/AkhilChoubey' className="contact-icon">
-            <AiFillGithub style={{fontSize: "1.5rem"}} className="fa"/></a>
+          <li onClick={github}>
+          <a href="https://github.com/AkhilChoubey" className="contact-icon"> 
+            <AiFillGithub style={{fontSize: "1.5rem"}} className="fa "/>
+            </a>
           </li>
-          <li onClick={facebook}><a href='https://www.facebook.com/profile.php?id=100009258792168' className="contact-icon">
-            <AiFillFacebook style={{fontSize: "1.5rem"}} className="fa" /></a>
+          <li onClick={facebook}>
+          <a href="https://www.facebook.com/profile.php?id=100009258792168" className="contact-icon"> 
+            <AiFillFacebook style={{fontSize: "1.5rem"}} className="fa " />
+            </a>
           </li>
-          <li onClick={twitter}><a href='https://twitter.com/AkhilKrChoubey1?s=08' className="contact-icon">
-            <AiOutlineTwitter style={{fontSize: "1.5rem"}} className="fa" /></a>
+          <li onClick={twitter}>
+          <a href="https://twitter.com/AkhilKrChoubey1?s=08" className="contact-icon"> 
+            <AiOutlineTwitter style={{fontSize: "1.5rem"}} className="fa S" />
+            </a>
           </li>       
         </ul>
         <hr />
@@ -151,4 +158,4 @@ const Contact2 = ()=>{
     </>
 }
 
-export default Contact2;
+export default withRouter(Contact);
