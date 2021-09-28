@@ -186,7 +186,7 @@ font-family: 'Merienda', cursive;
   }
   .meal-submit {
     font-size: 29px;
-    padding: 0;
+    padding-left: 0;
   }
 
 }
