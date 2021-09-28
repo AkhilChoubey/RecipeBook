@@ -53,7 +53,7 @@ const MealSearch = () => {
               </div> 
              <form className="d-flex meal-search" onSubmit={handleFind} data-aos='fade-up'>
         <input name="valData" onChange={handleChange} className="form-control me-2" type="search" placeholder="Enter Your Daily Calories Count" aria-label="Search" style={{  width: '33rem',borderRadius: '25px', height: '3rem',background: 'white'}} />
-        <div type="submit" onClick={handleFind} style={{paddingLeft: '18px' ,fontSize: '26px'}} ><BsSearch /></div>
+        <div className='meal-submit' type="submit" onClick={handleFind} ><BsSearch /></div>
         
         </form>
          { result.meals && 

@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Merienda&display=swap');
 html {
   scroll-behavior: smooth;
@@ -8,9 +7,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Mulish', sans-serif; */
-  /* font-family: 'Lobster Two', cursive;
-  font-family: 'Lobster Two', cursive; */
+
 font-family: 'Merienda', cursive;
 
 }
@@ -137,6 +134,17 @@ font-family: 'Merienda', cursive;
   margin-left: 23rem;
 }
 
+.meal-input {
+  width: 33rem;
+  border-radius: 25px;
+  height: 3rem;
+  background: white;
+}
+
+.meal-submit {
+    font-size: 26px;
+    padding-left: 18px;
+}
 
 @media (max-width: 1028px){
   .collapse {
@@ -173,6 +181,13 @@ font-family: 'Merienda', cursive;
     text-align: center;
     margin-left: 0;
   }
+  .meal-input{
+    width: 22rem;
+  }
+  .meal-submit {
+    font-size: 29px;
+  }
+
 }
 
 
