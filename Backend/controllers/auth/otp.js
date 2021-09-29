@@ -58,7 +58,7 @@ exports.sendOtp = asyncHandler(async (req, res, next) => {
         //     console.dir(reply)
         // })
         
-       return res.status(200).json({data:{ otp: otp }, message: "OTP sent!"});
+       return res.status(200).json({data:[], message: "OTP sent!"});
     }
     else {
       return  res.status(404).json({
